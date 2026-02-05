@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestão de Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Gestão de Pedidos</h1>
+
+    <form id="orderForm">
+        <input type="text" id="customer" placeholder="Cliente" required>
+
+        <div class="product-line">
+            <input type="text" id="product" placeholder="Produto">
+            <input type="number" id="quantity" placeholder="Qtd" min="1">
+            <input type="number" id="price" step="0.01" placeholder="Preço" min="0">
+            <button type="button" id="addProduct">Adicionar Produto</button>
+        </div>
+
+        <ul id="productList"></ul>
+
+        <button type="submit">Criar Pedido</button>
+    </form>
+
+    <input type="text" id="search" placeholder="Pesquisar pedidos">
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Cliente</th>
+                <th>Produtos</th>
+                <th>Total (€)</th>
+                <th>Estado</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <tbody id="orderTable"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel de Vendas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Painel de Vendas</h1>
+
+    <div class="summary">
+        <p>Total faturado: <span id="totalRevenue">0</span>€</p>
+        <label for="categoryFilter">Filtrar por categoria:</label>
+        <select id="categoryFilter">
+            <option value="ALL">Todas</option>
+            <option value="Eletrónica">Eletrónica</option>
+            <option value="Roupas">Roupas</option>
+            <option value="Alimentos">Alimentos</option>
+        </select>
+    </div>
+
+    <table id="salesTable">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Categoria</th>
+                <th>Quantidade</th>
+                <th>Preço Unitário (€)</th>
+                <th>Total (€)</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

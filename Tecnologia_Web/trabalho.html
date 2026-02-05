@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Jogo de Tabuleiro Avançado</title>
+<style>
+  .game-container { display: flex; gap: 20px; }
+  .board { display: grid; grid-template-columns: repeat(3, 60px); grid-gap: 5px; }
+  .cell { width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; border: 1px solid #333; cursor: pointer; font-size: 24px; }
+  .side { display: flex; flex-direction: column; gap: 10px; }
+  button { padding: 5px 10px; }
+</style>
+</head>
+<body>
+
+<h1>Jogo de Tabuleiro</h1>
+<div id="current-player">Jogador atual: X</div>
+
+<div class="game-container">
+  <div class="board" id="board"></div>
+  
+  <div class="side">
+    <h3>Peças do Jogador</h3>
+    <div id="player-pieces"></div>
+    
+    <h3>Peças do Bot</h3>
+    <div id="bot-pieces"></div>
+    
+    <button id="return-button">Voltar</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const boardSize = 3;
+  const boardContainer = document.getElementById('board');
+  const currentPlayerDisplay = document.getElementById('current-player');
+  const playerPiecesContainer = document.getElementById('player-pieces');
+  const botPiecesContainer = document.getElementById('bot-pieces');
+  const returnButton = document.getElementById('return-button');
+
+  let board = Array(boardSize).fill(null).map(() => Array(boardSize).fill(''));
+  let currentPlayer = 'X';
+  let playerPieces = 3;
+  let botPieces = 3;
+  let selectedCell = null;
+
+  function renderBoard() {
+    boardContainer.innerHTML = '';
+    for (let i = 0; i < boardSize; i++) {
+      for (let j = 0; j < boardSize; j++) {
+        const cell = document.createElement('div');
+        cell.className = 'cell';
+        cell.dataset.row = i;
+        cell.dataset.col = j;
+        cell.textContent = board[i][j];
+        cell.addEventListener('click', handleCellClick);
+        if (selectedCell && selectedCell.row == i && selectedCell.col == j) {
+          cell.style.background = '#f0f';
+        } else {
+          cell.style.background = '';
+        }
+        boardContainer.appendChild(cell);
+      }
+    }
+  }
+
+  function renderPieces() {
+    playerPiecesContainer.textContent = 'Peças restantes: ' + playerPieces;
+    botPiecesContainer.textContent = 'Peças restantes: ' + botPieces;
+  }
+
+  function switchPlayer() {
+    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+    currentPlayerDisplay.textContent = 'Jogador atual: ' + currentPlayer;
+  }
+
+  function checkWinner() {
+    const lines = [
+      // Linhas
+      [[0,0],[0,1],[0,2]],
+      [[1,0],[1,1],[1,2]],
+      [[2,0],[2,1],[2,2]],
+      // Colunas
+      [[0,0],[1,0],[2,0]],
+      [[0,1],[1,1],[2,1]],
+      [[0,2],[1,2],[2,2]],
+      // Diagonais
+      [[0,0],[1,1],[2,2]],
+      [[0,2],[1,1],[2,0]]
+    ];
+    for (const line of lines) {
+      const [a,b,c] = line;
+      if (board[a[0]][a[1]] && board[a[0]][a[1]] === board[b[0]][b[1]] && board[a[0]][a[1]] === board[c[0]][c[1]]) {
+        return board[a[0]][a[1]];
+      }
+    }
+    return null;
+  }
+
+  function botMove() {
+    // Tenta ganhar
+    for (let i = 0; i < boardSize; i++) {
+      for (let j = 0; j < boardSize; j++) {
+        if (board[i][j] === '') {
+          board[i][j] = 'O';
+          if (checkWinner() === 'O') {
+            botPieces--;
+            renderBoard();
+            renderPieces();
+            alert('Bot ganhou!');
+            return;
+          }
+          board[i][j] = '';
+        }
+      }
+    }
+    // Tenta bloquear jogador
+    for (let i = 0; i < boardSize; i++) {
+      for (let j = 0; j < boardSize; j++) {
+        if (board[i][j] === '') {
+          board[i][j] = 'X';
+          if (checkWinner() === 'X') {
+            board[i][j] = 'O';
+            botPieces--;
+            renderBoard();
+            renderPieces();
+            switchPlayer();
+            return;
+          }
+          board[i][j] = '';
+        }
+      }
+    }
+    // Coloca em primeira célula vazia
+    for (let i = 0; i < boardSize; i++) {
+      for (let j = 0; j < boardSize; j++) {
+        if (board[i][j] === '') {
+          board[i][j] = 'O';
+          botPieces--;
+          renderBoard();
+          renderPieces();
+          switchPlayer();
+          return;
+        }
+      }
+    }
+  }
+
+  function handleCellClick(event) {
+    const row = parseInt(event.target.dataset.row);
+    const col = parseInt(event.target.dataset.col);
+
+    // Fase de colocação
+    if (playerPieces > 0 && board[row][col] === '' && currentPlayer === 'X') {
+      board[row][col] = 'X';
+      playerPieces--;
+      renderBoard();
+      renderPieces();
+      if (checkWinner()) {
+        alert('Jogador ganhou!');
+        return;
+      }
+      switchPlayer();
+      setTimeout(botMove, 500);
+      return;
+    }
+
+    // Fase de movimento
+    if (board[row][col] === 'X' && currentPlayer === 'X') {
+      selectedCell = { row, col };
+      renderBoard();
+      return;
+    }
+
+    if (selectedCell && board[row][col] === '' && currentPlayer === 'X') {
+      board[row][col] = 'X';
+      board[selectedCell.row][selectedCell.col] = '';
+      selectedCell = null;
+      renderBoard();
+      if (checkWinner()) {
+        alert('Jogador ganhou!');
+        return;
+      }
+      switchPlayer();
+      setTimeout(botMove, 500);
+    }
+  }
+
+  returnButton.addEventListener('click', () => {
+    board = Array(boardSize).fill(null).map(() => Array(boardSize).fill(''));
+    playerPieces = 3;
+    botPieces = 3;
+    currentPlayer = 'X';
+    selectedCell = null;
+    renderBoard();
+    renderPieces();
+    currentPlayerDisplay.textContent = 'Jogador atual: X';
+  });
+
+  renderBoard();
+  renderPieces();
+});
+</script>
+
+</body>
+</html>

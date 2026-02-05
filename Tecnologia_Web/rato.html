@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos de Rato - Arrastar Ponto</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+
+    #dot {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      cursor: grab;
+      user-select: none; /* evita seleção de texto */
+    }
+
+    #log {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      background: #f0f0f0;
+      border: 1px solid #000;
+      padding: 10px;
+      width: 300px;
+      max-height: 200px;
+      overflow-y: auto;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Arraste o ponto com o rato</h1>
+<p>Clique no ponto vermelho, mantenha pressionado e mova o rato.</p>
+
+<div id="dot"></div>
+
+<div id="log">
+  <strong>Logs de eventos do rato:</strong><br>
+</div>
+
+<script>
+window.onload = function() {
+    const dot = document.getElementById("dot");
+    const log = document.getElementById("log");
+
+    let x = 0;
+    let y = 0;
+    let moving = false;
+
+    function logEvento(mensagem) {
+        log.innerHTML += mensagem + "<br>";
+        console.log(mensagem);
+    }
+
+    // Quando o botão do rato é pressionado sobre o ponto
+    dot.onmousedown = function(event) {
+        x = event.clientX; // posição inicial do cursor
+        y = event.clientY;
+        moving = true;
+        dot.style.cursor = "grabbing";
+        logEvento(`mousedown em (${x}, ${y})`);
+        event.preventDefault(); // evita seleção de texto
+    };
+
+    // Quando o rato se move
+    dot.onmousemove = function(event) {
+        if (!moving) return;
+        const dx = event.clientX - x;
+        const dy = event.clientY - y;
+        dot.style.left = (dot.offsetLeft + dx) + "px";
+        dot.style.top = (dot.offsetTop + dy) + "px";
+        x = event.clientX;
+        y = event.clientY;
+        logEvento(`mousemove em (${x}, ${y})`);
+        event.preventDefault();
+    };
+
+    // Quando o botão do rato é solto
+    dot.onmouseup = function(event) {
+        moving = false;
+        dot.style.cursor = "grab";
+        logEvento(`mouseup em (${event.clientX}, ${event.clientY})`);
+        event.preventDefault();
+    };
+
+    // Para garantir que soltando fora do ponto ainda funcione
+    document.onmouseup = function(event) {
+        if (moving) {
+            moving = false;
+            dot.style.cursor = "grab";
+            logEvento(`mouseup (fora do ponto) em (${event.clientX}, ${event.clientY})`);
+        }
+    };
+};
+</script>
+
+</body>
+</html>

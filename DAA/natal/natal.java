@@ -1,0 +1,32 @@
+class A{
+    public static void main(String[]a){
+        System.out.println("_____________*_______________");
+        System.out.println("____________***______________");
+        System.out.println("___________*o_o*_____________");
+        System.out.println("__________*o___o*____________");
+        System.out.println("_________*o_____o*___________");
+        System.out.println("________*o___o___o*__________");
+        System.out.println("_______*o___o_o___o*_________");
+        System.out.println("______*o_o_o___o_o_o*________");
+        System.out.println("_____*___*o_____o*___*_______");
+        System.out.println("________*o_______o*__________");
+        System.out.println("_______*o____o____o*_________");
+        System.out.println("______*o____o_o____o*________");
+        System.out.println("_____*o____o___o____o*_______");
+        System.out.println("____*o__o_o_____o_o__o*______");
+        System.out.println("________*o_______o*__________");
+        System.out.println("_______*o_________o*_________");
+        System.out.println("______*o___________o*________");
+        System.out.println("_____*o_____________o*_______");
+        System.out.println("____*o_______________o*______");
+        System.out.println("___*o_________________o*_____");
+        System.out.println("__*o___________________o*____");
+        System.out.println("_*o_o_o_o_o_o_o_o_o_o_o_o*___");
+        System.out.println("____________o_o______________");
+        System.out.println("____________o_o______________");
+        System.out.println("____________o_o______________");
+        System.out.println("____________o_o______________");
+        System.out.println("____________o_o______________");
+        System.out.println("____________ooo______________");
+    }
+}

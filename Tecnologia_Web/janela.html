@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de Eventos de Janela</title>
+  <style>
+    body {
+      height: 2000px; /* para permitir scroll */
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #log {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: #f0f0f0;
+      border: 1px solid #000;
+      padding: 10px;
+      width: 300px;
+      max-height: 300px;
+      overflow-y: auto;
+      font-size: 14px;
+    }
+    #button {
+      color: black;
+      background-color: yellow;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 18px;
+      border: 2px solid black;
+      display: inline-block;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Eventos de Janela em JavaScript</h1>
+<p>Experimente rolar a página, redimensionar a janela e clicar no botão abaixo.</p>
+
+<div id="button">Clique para trocar cores!</div>
+
+<div id="log">
+  <strong>Logs de eventos:</strong><br>
+</div>
+
+<script>
+function logEvento(mensagem) {
+    const log = document.getElementById("log");
+    log.innerHTML += mensagem + "<br>";
+    console.log(mensagem);
+}
+
+// Evento LOAD
+window.onload = function() {
+    logEvento("A página foi totalmente carregada (window.onload).");
+
+    // Configurar clique do botão
+    const button = document.getElementById("button");
+    button.onclick = function() {
+        const tmp = button.style.color; 
+        button.style.color = button.style.backgroundColor; 
+        button.style.backgroundColor = tmp; 
+        logEvento("Clique no botão: cores trocadas!");
+    };
+};
+
+// Evento UNLOAD
+window.onunload = function() {
+    logEvento("A janela está a ser fechada ou navegada para outro site (window.onunload).");
+};
+
+// Evento RESIZE
+window.onresize = function() {
+    logEvento("A janela foi redimensionada (window.onresize). Largura: " 
+        + window.innerWidth + ", Altura: " + window.innerHeight);
+};
+
+// Evento SCROLL
+window.onscroll = function() {
+    logEvento("A página foi rolada (window.onscroll). Scroll Y: " + window.scrollY);
+};
+</script>
+
+</body>
+</html>

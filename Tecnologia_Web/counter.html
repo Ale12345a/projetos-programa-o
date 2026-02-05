@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador Cliente-Servidor</title>
+    <link rel="stylesheet" href="counter.css">
+</head>
+<body>
+
+<h1>Contador com Classe e Servidor</h1>
+
+<div id="base"></div>
+
+<script src="counter.js"></script>
+<script>
+    window.onload = () => {
+        new Counter("base", "localhost", 8080);
+    };
+</script>
+
+</body>
+</html>

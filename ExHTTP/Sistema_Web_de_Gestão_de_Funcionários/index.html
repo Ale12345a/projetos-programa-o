@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestão de Funcionários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Gestão de Funcionários</h1>
+
+    <form id="employeeForm">
+        <input type="text" id="name" placeholder="Nome" required>
+
+        <select id="department">
+            <option value="IT">IT</option>
+            <option value="RH">RH</option>
+            <option value="Financeiro">Financeiro</option>
+        </select>
+
+        <input type="number" id="salary" placeholder="Salário (€)" required>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <div class="controls">
+        <label>Filtrar departamento:</label>
+        <select id="filterDepartment">
+            <option value="ALL">Todos</option>
+            <option value="IT">IT</option>
+            <option value="RH">RH</option>
+            <option value="Financeiro">Financeiro</option>
+        </select>
+
+        <p>Total salários: <strong><span id="totalSalary">0</span>€</strong></p>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Departamento</th>
+            <th>Salário</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody id="employeeTable"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

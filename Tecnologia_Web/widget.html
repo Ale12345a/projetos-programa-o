@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos de Widgets</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #log {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #000;
+      background: #f0f0f0;
+      max-width: 400px;
+      max-height: 200px;
+      overflow-y: auto;
+      font-size: 14px;
+    }
+    input, select, textarea {
+      margin: 5px 0;
+      padding: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Eventos de Widgets</h1>
+
+<form id="myForm">
+  <label for="colorSelect">Escolha uma cor para o formulário:</label><br>
+  <select id="colorSelect">
+    <option value="">-- Selecionar --</option>
+    <option value="orange">Orange</option>
+    <option value="darkblue">DarkBlue</option>
+    <option value="darkslategray">DarkSlateGrey</option>
+  </select>
+  <br><br>
+
+  <label for="textInput">Digite algo:</label><br>
+  <input type="text" id="textInput" placeholder="Digite aqui">
+  <br><br>
+
+  <label for="textArea">Texto grande:</label><br>
+  <textarea id="textArea" rows="3" cols="30" placeholder="Digite algo..."></textarea>
+  <br><br>
+
+  <button type="submit">Enviar</button>
+</form>
+
+<div id="log"><strong>Logs de eventos:</strong><br></div>
+
+<script>
+const log = document.getElementById("log");
+const form = document.getElementById("myForm");
+const colorSelect = document.getElementById("colorSelect");
+const textInput = document.getElementById("textInput");
+const textArea = document.getElementById("textArea");
+
+// Função para logar eventos
+function logEvento(mensagem) {
+    log.innerHTML += mensagem + "<br>";
+    console.log(mensagem);
+}
+
+// Evento CHANGE: quando muda valor de select, input ou textarea
+colorSelect.onchange = function() {
+    form.style.color = this.value; // muda cor do texto do formulário
+    logEvento(`change: select alterado para "${this.value}"`);
+};
+
+textInput.onchange = function() {
+    logEvento(`change: input alterado para "${this.value}"`);
+};
+
+textArea.onchange = function() {
+    logEvento(`change: textarea alterado`);
+};
+
+// Evento FOCUS: quando recebe foco
+textInput.onfocus = function() {
+    logEvento(`focus: input recebeu foco`);
+};
+
+textArea.onfocus = function() {
+    logEvento(`focus: textarea recebeu foco`);
+};
+
+// Evento SELECT: quando seleciona texto
+textInput.onselect = function() {
+    logEvento(`select: texto selecionado no input`);
+};
+
+textArea.onselect = function() {
+    logEvento(`select: texto selecionado no textarea`);
+};
+
+// Evento SUBMIT: ao enviar formulário
+form.onsubmit = function(event) {
+    event.preventDefault(); // evita envio real
+    logEvento(`submit: formulário enviado`);
+};
+</script>
+
+</body>
+</html>

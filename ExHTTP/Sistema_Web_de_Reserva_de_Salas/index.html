@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Salas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Reserva de Salas</h1>
+
+    <form id="bookingForm">
+        <input type="text" id="userName" placeholder="Nome do colaborador" required>
+
+        <select id="room">
+            <option value="Sala A">Sala A</option>
+            <option value="Sala B">Sala B</option>
+            <option value="Sala C">Sala C</option>
+        </select>
+
+        <input type="time" id="time" required>
+
+        <button type="submit">Reservar</button>
+    </form>
+
+    <h2>Reservas</h2>
+    <ul id="bookingList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
