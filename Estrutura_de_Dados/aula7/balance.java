@@ -1,3 +1,7 @@
+/*Recebe uma string formada apenas por parenteses rectos e curvos, e devolve true caso a expressão esteja bem formada e false caso contrário.
+
+Por exemplo, "([()])" e "[()()]" são expressões bem formadas, ao passo que "(()]", "[()[])" ou "[()[]" não estão balanceadas (faltam parenteses por fechar ou fecham os parenteses errados). */
+
 public class balance {
     public static boolean balanced(String s) {
         MyStack<Character> stack = new LinkedListStack<>();

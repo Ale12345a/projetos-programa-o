@@ -2,6 +2,9 @@
 // Programa: ED197 - merge de duas filas ordenadas
 // -----------------------------------------------------------
 
+/*Assumindo que as filas a e b vêm ordenadas de forma crescente, este método deve criar e devolver uma nova fila que é a união ordenada (merge) das duas filas. Por exemplo, juntar [2,4,8,10] com [1,4,9] daria [1,2,4,4,8,9,10]. As duas filas iniciais podem ser destruidas durante o processo de junção.
+ */
+
 public class uniao_ordenada {
 
     public static MyQueue<Integer> merge(MyQueue<Integer> a, MyQueue<Integer> b) {

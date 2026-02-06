@@ -1,3 +1,13 @@
+/*O Problema
+
+Dado um fragmento de ADN alienígena, a tua tarefa é produzir uma listagem das letras que aparecem em pelo menos uma vez, ordenada por ordem decrescente da sua frequência (número de occorrências) e em caso de empate pela ordem em que aparecem primeiro no fragmento (ou seja, tendo em conta a primeira ocorrência de cada letra).
+Input
+
+O input contém uma única linha contendo o fragmento a considerar. Este fragmento tem tamanho T e é constituído apenas por letras maiúsculas.
+Output
+
+O output deve listar todas as letras que aparecem pelo menos uma vez. Deve aparecer uma letra por linha, no formato "LETRA FREQUENCIA", onde FREQUENCIA é um inteiro indicando o número total de ocorrências dessa letra. As letras devem vir por ordem decrescente de frequência e em caso de empate pela ordem em que aparecem primeiro no input.  */
+
 import java.util.Scanner;
 import java.util.Arrays;
 

@@ -1,3 +1,14 @@
+/*O Problema
+
+Dados vários pares de inteiros Ni e Ki, a tua tarefa é descobrir, para cada par, qual o menor número maior que Ni tal que a soma dos seus dígitos seja exactamente Ki.
+Input
+
+Na primeira linha do input vem um inteiro T indicando o número de casos de teste, ou seja, o número de pares de inteiros a considerar.
+
+Seguem-se T linhas, cada uma com os dois inteiros Ni Ki correspondentes.
+Output
+
+O output deve conter T linhas. A i-ésima linha deve conter um único inteiro Ri indicando a resposta para o par correspondente, ou seja, qual o número mais pequeno que é simultaneamente maior que Ni e com a soma dos seus dígitos a ser Ki.*/
 import java.util.Scanner;
 
 public class arranjadinhos{

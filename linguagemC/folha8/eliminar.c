@@ -1,3 +1,8 @@
+/*Dena uma função void eliminar(char str[], char ch) que elimina a primeira
+ocorrência de um carater ch de uma cadeia de carateres. Exemplo: se str = "ABBA", então
+depois de executar eliminar(str, 'B') devemos ter str = "ABA".
+Tenha o cuidado de colocar corretamente o terminador '\0'.*/
+
 #include <stdio.h>
 
 void eliminar(char str[], char ch) {

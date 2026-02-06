@@ -1,3 +1,11 @@
+/*Escreva um programa que põe à prova os conhecimentos sobre a tabuada e gerando
+10 perguntas aleatórias do tipo Quanto é 3 x 9?. O utilizador introduz um valor e o
+programa diz se está Certo! ou se está errado. Em caso de erro o programa responde
+com uma mensagem Errado! O resultado é 27.. Os inteiros nas perguntas devem estar
+compreendidos entre 1 e 9 inclusivé. No nal o programa deve indicar o número de respostas
+certas e erradas. O número de perguntas (10) deve ser fácil de modicar por meio de
+#define.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

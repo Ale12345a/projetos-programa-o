@@ -1,3 +1,23 @@
+/*A fórmula de Gregory-Leibniz para aproximar π é:
+π = 4 ×
+(
+1 − 1
+3 + 1
+5 − 1
+7 + 1
+9 + · · ·
+)
+= 4 ×
+∞∑
+i=0
+(−1)i
+2i + 1
+Implemente a função double aprox_pi(int n) que calcula π aproximadamente somando
+os primeiros n termos desta série.
+Esta série converge lentamente; pode constatar isso escrevendo um programa principal que
+compare as aproximações obtidas com 10, 100 e 1000 termos com a constante M_PI denida
+no header math.h.*/
+
 #include <stdio.h>
 #include <math.h>  // para M_PI
 

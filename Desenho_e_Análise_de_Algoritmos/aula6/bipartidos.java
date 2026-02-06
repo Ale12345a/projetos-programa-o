@@ -1,3 +1,15 @@
+/*O Problema
+
+Dados vários grafos não dirigidos, a tua tarefa é indicar se cada um deles é ou não bipartido.
+
+Input
+
+Na primeira linha do input vem um número N indicando o número de casos a considerar. Cada dos casos começa uma linha com um inteiro V indicando o número de nós, seguido de uma linha com um inteiro E indicando o número de arestas. Seguem-se E linhas, cada uma com dois inteiros A e B indicando que existe uma aresta entre A e B. Os nós estão numerados entre 1 e V, ou seja, 1 ≤ A, B ≤ N. É garantido que os grafos são conexos.
+
+Output
+
+O output deve ser constituido por N linhas, cada uma com a palavra sim se o grafo correspondente for bipartido, ou nao, se o grafo não for bipartido. */
+
 import java.util.*;
 import java.io.*;
 

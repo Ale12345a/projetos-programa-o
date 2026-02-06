@@ -1,3 +1,19 @@
+/*O Problema
+
+Escreva um programa que dado um conjunto de N moedas e uma série de P perguntas, cada uma indicando uma quantia Qi, indique qual o menor número de moedas necessário para fazer cada quantia, e quais as moedas a usar em cada caso.
+
+Pode assumir que todas as quantias são possíveis de fazer e que tem uma quantidade "infinita" de cada moeda, ou seja que para fazer o mínimo pode repetir qualquer valor de moeda tantas vezes quanto o necessário.
+Input
+
+Na primeira linha vem um número N, indicando o número de tipos de moedas em Algoland. Na segunda linha vêm N inteiros Ti, indicando quais os valores de cada tipo de moeda. Pode assumir que as moedas vêm por ordem crescente.
+
+Na terceira linha vem um único inteiro P indicando o número de perguntas a considerar. Nas P linhas seguintes vêm as perguntas em si, cada uma com um inteiro Qi indicando a quantia para a qual se quer minimizar o número de moedas a usar.
+Output
+
+P linhas, cada uma com a resposta da pergunta respectiva. Cada linha deve vir no formato "Qi: [MIN] M1 M2 ... MMIN", onde MIN é o número mínimo de moedas a usar para fazer a quantia Qi e M1 M2 ... MMIN são as MIN moedas a usar para fazer a quantia.
+
+As moedas devem vir por ordem crescente (M1 ≤ M2 ≤ ... ≤ MMIN). Como podem existir várias maneiras diferentes (e mínimas) de fazer cada quantia, deve escrever aquela que use a mais pequena moeda M1; em caso de empate a que use a mais pequena M2 e por aí adiante. */
+
 import java.util.*;
 
 public class moedas{

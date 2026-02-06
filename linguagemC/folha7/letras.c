@@ -1,3 +1,8 @@
+/*Escreva uma função int todos_letras(char str[]) que testa se uma cadeia contém
+apenas carateres letras (maísculas ou minúsculas). O resultado deve ser 1 em caso armativo
+e 0 em caso negativo.
+Sugestão: utilize a função isalpha da biblioteca-padrão.*/
+
 #include <stdio.h>
 #include <ctype.h>  // para isalpha()
 

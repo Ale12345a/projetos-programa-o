@@ -1,3 +1,13 @@
+/*Escreva uma função int forte(char str[]) que verica se uma cadeia de carateres
+é uma palavra passe forte usando o seguinte critério:
+1. deve ter pelo menos 6 carateres;
+2. deve conter pelo menos uma letra maíscula, uma letra minúscula e um algarismo.
+O resultado da função deve ser 1 se ambos os critérios se vericam e 0 caso contrário. Por
+exemplo: "Abr4cadabra" e "Apric0t" são palavras-passe fortes, mas "Ub40" não é (porque
+o comprimento é inferior a 6) e "POLICE" também não (porque só tem letras maísculas).
+Sugestão: pode usar a função strlen da biblioteca-padrão para calcular o comprimento
+da cadeia e as funções islower, isupper, isdigit para testar os três tipos de carateres.*/
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>

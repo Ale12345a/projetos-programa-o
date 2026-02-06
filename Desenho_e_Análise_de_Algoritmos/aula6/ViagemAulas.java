@@ -1,3 +1,21 @@
+/*O Problema
+
+Dado um mapa de de estradas, a localização duma casa e a localização das aulas teóricas, a tua tarefa é escrever um programa indicando qual a distância mínima a percorrer desde a casa até às aulas.
+Input
+
+A primeira linha contém dois números: N , o número de pontos ou sítios diferentes no mapa e E, o número de estradas.
+
+De seguida vem uma linha indicando primeiro o sítio onde fica a casa do Aniceto, seguido do local das aulas (o seu destino, portanto).
+
+Seguem-se de E linhas, indicando quais os pontos que a estrada liga, e o comprimento (em Km) da estrada que os liga, no formato ponto_1 ponto_2 comprimento_estrada. O comprimento da estrada não ultrapassa os 1000 Km e não é necessariamente um número inteiro. Podes assumir que as estradas têm sempre dois sentidos (isto é, quando existe estrada de A para B, automaticamente também existe uma de B para A, com a mesma distancia).
+
+Cada ponto é representado por uma palavra contendo apenas letras mínusculas ou hifens (-), tendo no máximo 30 caracteres.
+Output
+
+Deve ser imprimida uma única linha, contendo a distância mínima a percorrer para ir da casa do Aniceto até ao local das aulas (a distância deve vir arredondada a uma casa decimal).
+
+Podes assumir que existe sempre pelo menos um caminho entre a casa do Aniceto e o seu destino. */
+
 import java.util.*;
 import java.io.*;
 

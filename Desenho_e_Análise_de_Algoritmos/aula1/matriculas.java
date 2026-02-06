@@ -1,3 +1,15 @@
+/*O Problema
+
+Dadas vários pares de matrículas em qualquer um dos quatro formatos possíveis, a tua tarefa é calcular e imprimir a distância entre cada par.
+Input
+
+Na primeira linha do input vem um inteiro T indicando o número de casos de teste, ou seja, o número de pares de matrículas a considerar.
+
+Seguem-se N linhas, cada uma com duas matrículas num dos quatro formatos possíveis: XX-NN-NN (1ª geração), NN-NN-XX (2ª geração), NN-XX-NN (3ª geração) ou XX-NN-XX (4ª geração)
+Output
+
+O output deve conter T linhas. A i-ésima linha deve conter um único inteiro indicando a distância entre o par de matrículas respetivo. */
+
 import java.util.Scanner;
 
 public class matriculas{

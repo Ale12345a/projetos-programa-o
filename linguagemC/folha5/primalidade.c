@@ -1,3 +1,9 @@
+/*Usando a função de teste de primalidade apresentada na aula 7, escreva um programa
+que imprime uma lista de primos até um limite superior especicado pelo utilizador. Exem-
+plo:
+Limite superior? 100
+2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97*/
+
 #include <stdio.h>
 #include <math.h>
 

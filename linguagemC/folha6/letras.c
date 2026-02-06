@@ -1,3 +1,10 @@
+/*Escreva um programa que lê carateres e contabiliza o número de vezes de ocorreu cada
+letra (A a Z) ignorando a distinção entre maiúsculas e minúsculas. No nal deve imprimir
+uma tabela com as contagens:
+A: 3 B: 2 C: 2 D: 1 E: 7 ...
+Sugestão: utilize uma variável indexada com 26 elementos para contabilizar a contagem das
+letras. */
+
 #include <stdio.h>
 #include <ctype.h>  // para toupper()
 

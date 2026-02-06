@@ -1,3 +1,9 @@
+/*Escreva uma função
+void decompor(int total_seg, int *horas, int *mins, int *segs);
+que decompõe um total inteiro de segundos total_seg em horas, minutos (059) e segundos
+(059); os resultados devem ser atribuidos ao conteúdo dos apontadores horas, mins e segs.
+Pode assumir que o total de segundos é maior que zero*/
+
 #include <stdio.h>
 
 void decompor(int total_seg, int *horas, int *mins, int *segs) {

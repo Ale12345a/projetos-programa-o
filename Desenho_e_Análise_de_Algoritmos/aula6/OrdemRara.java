@@ -1,4 +1,16 @@
-//DAA029
+/*O Problema
+
+A tua tarefa é escrever um programa para completar o trabalho do coleccionador. Em particular, o teu programa deverá receber um conjunto de palavras ordenadas associadas a uma dada sequência de ordem das letras e determinar qual é essa sequência.
+Input
+
+Na primeira linha vem um número inteiro N indicando o número de palavras a ler. Seguem-se N linhas, cada uma com uma palavra Pi contendo apenas letras maiúsculas.
+
+As linhas vêm ordenada pela ordem que pretende descobrir.
+Output
+
+Deve ser imprimida uma única linha contendo as letras maiúsculas na ordem determinada pela sequência de junção usada para produzir o input. Apenas devem aparecer os caracteres que aparecem no input.
+
+Para os casos de teste dados, é garantido que existe uma e só uma ordem para a qual o input faz sentido. */
 
 import java.util.*;
 

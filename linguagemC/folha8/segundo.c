@@ -1,3 +1,10 @@
+/*Dena uma função int segundo_menor(int vec[], int size) que encontra o se-
+gundo menor valor de uma variável indexada vec com size elementos. Pode assumir que
+size≥ 2.
+Sugestão: para encontrar o segundo menor valor basta efetuar as duas primeiras iterações
+do algoritmo de ordenação por seleção apresentado na aula 16. A sua função pode
+modicar a ordem dos elementos de vec.*/
+
 int segundo_menor(int vec[], int size) {
     // primeira iteração: encontrar o menor e colocar em vec[0]
     for (int i = 0; i < 2; i++) { // apenas duas primeiras iterações

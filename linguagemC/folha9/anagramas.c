@@ -1,3 +1,14 @@
+/*Escreva uma função int anagramas(char str1[], char str2[]) que determina se
+duas cadeias de carateres são anagramas, isto é, se se escrevem com os mesmos carateres.
+O resultado deve ser 1 em caso armativo e 0 caso contrário. Por exemplo, deposit e
+topside são anagramas:
+char str1[] = "deposit";
+char str2[] = "topside";
+int r = anagramas(str1,str2); // resultado 1
+Sugestão: use uma função auxiliar como no exercício anterior para ordenar ambas as
+cadeias; as cadeias originais são anagramas se e só se as cadeias ordenadas são exatamente
+iguais carater-a-carater.*/
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>

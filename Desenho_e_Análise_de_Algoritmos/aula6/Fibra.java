@@ -1,3 +1,15 @@
+/*O Problema
+
+Dado um conjunto de casas já ligadas, um conjunto de casas a ligar e um conjunto de ligações possíveis e respetivos custos, a tua tarefa é determinar qual o menor custo possível para colocar todas as casas na nova rede, quais ligações deves usar para isso.
+Input
+
+A primeira linha contém três inteiro A B C, respetivamente o número A de casas já na rede, o número B de casas a adicionar a rede e o número C de possiveis novas ligações. É garantido que as A casas já existentes estão ligadas num único componente conexo e que são identificadas por inteiros consecutivos de 1 a A. As B casas a adicionar são identificadas por inteiros consecutivos de A+1 a A+B.
+
+Seguem-se C linhas no formato x y p, cada uma indicando uma possível ligação com custo p entre as casas x e y. É garantido que é possível usar as ligações para ligar todas as novas casas à rede já existente. As ligações não têm direção associada.
+Output
+
+Na primeira linha deve vir o menor custo possível para ligar todas as novas casas à rede, como atrás indicado. Na segunda linha devem vir B inteiros indicando os custos da ligações usadas (separados por um espaço). Estes custos devem vir por ordem crescente, e se existir mais que uma solução de igual custo mínimo, pode imprimir qualquer uma dessas soluções. */
+
 import java.util.*;
 import java.io.*;
 

@@ -1,3 +1,8 @@
+/*Dena uma função int identidade(int mat[N][N]) para vericar se uma matrix
+N × N é a identidade (isto é, contém 1 na diagional principal e 0 nas outras posições).
+O resultado deve ser 1 ou 0 conforme a matriz é ou não identidade. A sua função deve
+funcionar para qualquer dimensão N declarada como constante usando usando #define.*/
+
 #include <stdio.h>
 
 #define N 3  // Dimensão da matriz

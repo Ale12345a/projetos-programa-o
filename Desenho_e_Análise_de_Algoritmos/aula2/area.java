@@ -1,3 +1,17 @@
+/*O Problema
+
+Dadas as coordenadas de um quadrado e um círculo a tua tarefa é descobrir qual a área da zona da interseção entre ambas as duas figuras geométricas.
+Input
+
+Na primeira linha do input vem um número N, indicando o número de casos a considerar.
+
+Seguem-se N linhas, cada uma com um caso de teste (um quadrado e um círculo). Cada caso é indicado por 6 inteiros: qx, qy, ql, cx, cy, cr. O quadrado tem os lados paralelos aos eixos das coordenadas, canto inferior esquerdo (qx, qy) e lado de tamanho ql. O círculo tem centro (cx, cy) e raio cr.
+Output
+
+O output deve ser constituído por N linhas, uma por cada caso, indicando a área da interseção entre o quadrado e o círculo respectivo.
+
+Para ser considerada correcta, a diferença entre a área que escreveu e a área correcta deve ser inferior ou igual a 0.1 (este problema tem um avaliador especial para verificar se isso acontece). Por exemplo, se a resposta correcta for "1.2345" qualquer uma das seguintes respostas seria aceite: "1.2", "1.3, "1.23", "1.22", "1.24" (já "1.1" não seria aceite, pois |1.2345 - 1.1| > 0.1). */
+
 import java.util.Scanner;
 public class area{
   static float cx, cy, r;

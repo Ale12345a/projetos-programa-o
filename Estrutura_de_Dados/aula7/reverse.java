@@ -1,3 +1,7 @@
+/*Deve inverter, na pilha, os seus primeiros n elementos. Por exemplo, se s for {1,2,3,4,5} (com 1 no topo da pilha), então uma chamada a reverse(s, 3) deve transformar s em {3,2,1,4,5}.
+
+Pode assumir que n é um valor entre 1 e o tamanho da pilha.  */
+
 public class reverse {
 
     public static void reverse(MyStack<Integer> s, int n) {

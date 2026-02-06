@@ -1,6 +1,6 @@
 /* -----------------------------------
   Estruturas de Dados 2019/2020
-  Triagem de Manchester [ED098]  
+  Triagem de Manchester  
 ----------------------------------- */
 
 import java.util.Scanner;
@@ -51,7 +51,7 @@ class Equipa {
 }
 
 // Classe principal que contem o metodo main
-class ED098 {
+class Triagem_de_Manchester {
     // Constantes que nao mudam durante o programa: numero de cores e seus nomes
     private static final int NUM_CORES = 5;
     private static final String[] CORES = {"Vermelho","Laranja","Amarelo","Verde","Azul"};

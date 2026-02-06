@@ -1,3 +1,16 @@
+/*Pretende-se calcular o logaritmo natural (isto é, de base e) usando a série de Taylor:
+log(1 + x) = x − x2
+2 + x3
+3 − · · · =
+∞∑
+i=1
+(−1)i+1 xi
+i
+Escreva uma função double serie_log(double x, int n) que calcula aproximamente a
+série acima somando os termos até à potência n de x. Por exemplo: serie_log(x, 3) deve
+calcular x − x2/2 + x3/3. Pode assumir que n ≥ 1. Tenha o cuidado de evitar o cálculo
+desnessário de potências sucessivas de x.*/
+
 #include <stdio.h>
 
 double serie_log(double x, int n) {

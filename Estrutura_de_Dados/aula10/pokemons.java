@@ -1,3 +1,15 @@
+/*O Problema
+
+Dado um conjunto de locais e a distância entre eles, tens de descobrir qual o tamanho do menor percurso que passa por todos os pontos voltando no final ao local inicial.
+Input
+
+Na primeira linha do input vem um número N (3 ≤ N ≤ 10) indicando o número de locais a considerar. Na segunda linha vêm exactamente N palavras indicando o nome dos locais. Cada nome contém apenas letras e tem um tamanho entre 1 e 30. O primeiro local indicado é o sítio onde o Aniceto está inicialmente.
+
+Seguem-se exactamente N linhas, cada uma com N números, indicando a matriz de distâncias entre os locais. A j-ésima coluna da i-ésima linha representa a distância entre o local i e o local j (verifica o exemplo para perceberes melhor). Esta matriz é garantidamente simétrica, ou seja, distância(i,j)=distância(j,i).
+Output
+
+O output é constituído por uma linha contendo um único número indicando o comprimento do menor caminho que passa por todos os locais e volta ao local inicial, tal como atrás descrito. Este número deve vir arredondado a duas casas decimais.  */
+
 import java.util.*;
 
 public class pokemons {

@@ -1,3 +1,9 @@
+/*Escreva uma função int calc(char str[]) que implementa uma mini-calculadora: a
+cadeia de carateres dada tem sempre 3 carateres correspondentes a dois algarismos decimais
+('0' até '9') e um sinal de operação no meio ('+', '-', '*'). A função deve calcular o
+valor da expressão e retornar o inteiro correspondente.
+Exemplos: calc("5-3") dá 2; calc("2*3") dá 6.*/
+
 #include <stdio.h>
 
 int calc(char str[]) {
