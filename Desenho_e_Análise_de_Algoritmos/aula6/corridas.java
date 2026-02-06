@@ -1,3 +1,17 @@
+/*O Problema
+
+Dado o mapa do parque (o grafo), tens de ajudar o Aniceto a descobrir qual o maior número de caminhos diferentes (sem partilhar arestas) que se consegue formar entre o primeiro e o último nó.
+Input
+
+A primeira linha contém dois inteiros V e E indicando respectivamente o número de nós e de arestas (trilhos) a considerar.
+
+Seguem-se exactamente E linhas, cada uma com dois inteiros A B, indicando que existe um trilho (bidirecional) entre os nós A e B.
+
+Os nós são representados por inteiros entre 1 e V (inclusive) e é garantido que existe sempre pelo menos um caminho entre 1 e V.
+Output
+
+O output deve ser constituído por uma única linha indicando o número máximo de caminhos diferentes (sem partilhar trilhos) que podem existir entre o nó 1 e o nó V.  */
+
 import java.util.*;
 
 public class corridas {

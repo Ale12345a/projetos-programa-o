@@ -1,3 +1,7 @@
+/*Escreva uma função int palindromo(char str[]) que testa se uma cadeia de cara-
+teres é um palíndromo, isto é, se tem a mesma sequência de carateres da esquerda para a
+direita e vice-versa.*/
+
 #include <stdio.h>
 #include <string.h>  // para strlen()
 

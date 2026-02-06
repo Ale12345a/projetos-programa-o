@@ -1,3 +1,10 @@
+/*Dena uma função void sort_desc(int vec[], int n) que ordena um vetor de in-
+teiros de comprimento n por ordem descendente (isto é, primeiro o maior valor, depois o
+segundo maior, e assim sucessivamente). Por exemplo: se vec={3,2,1,3,5} e n=5 então
+depois de executar sort_desc(vec, n) devemos ter vec={5,3,3,2,1}.
+Sugestão: adapte um dos algoritmos de ordenação (seleção ou inserção) apresentados
+nas aulas 18 e 19 para ordenar por ordem inversa.*/
+
 void selecao_decrescente(int vec[], int size) {
     for (int i = 0; i < size - 1; i++) {
         int max_idx = i;

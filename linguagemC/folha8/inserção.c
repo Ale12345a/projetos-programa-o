@@ -1,3 +1,10 @@
+/*screva um programa completo que lê uma sequência de inteiros positivos da
+entrada-padrão terminada por zero, ordena e imprime por ordem crescente.
+Sugestão: a função main no seu programa deve declarar uma variável indexada com um
+tamanho máximo (por exemplo: 1000), ler os valores, invocar a função função de ordena-
+ção e imprimir a sequência nal ordenada. Experimente ambos os algoritmos (deve obter
+resultados iguais). ordenação por inserção*/
+
 #include <stdio.h>
 
 #define MAX 1000

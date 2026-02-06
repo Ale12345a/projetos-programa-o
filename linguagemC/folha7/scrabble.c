@@ -1,3 +1,12 @@
+/*Dena uma função int scrabble(char str[]) que calcula a pontuação de uma pa-
+lavra dada como cadeia de carateres; pode assumir que a cadeia é constituida apenas por
+letras maiúsculas sem acentos.
+Recorde que a pontuação de palavras em inglês no jogo SCRABBLE : A,E,I,L,N,O,R,T,S,U:
+1 ponto; D,G: 2 pontos; B,C,M,P: 3 pontos; F,H,V,W,Y: 4 pontos; K: 5 pontos; J,X: 8 pon-
+tos; Q,Z: 10 pontos. A pontuação duma palavra é a soma dos pontos de letras individuais.1
+Exemplo: PITFALL vale 3 + 1 + 1 + 4 + 1 + 1 + 1 = 12 pontos, logo scrabble("PITFALL")
+dá resultado 12.*/
+
 #include <stdio.h>
 
 int scrabble(char str[]) {

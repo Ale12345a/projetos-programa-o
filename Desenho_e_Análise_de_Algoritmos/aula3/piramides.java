@@ -1,3 +1,13 @@
+/*O Problema
+
+Escreva um programa que dada uma pirâmide com N camadas, e uma descrição das pedras em falta ou muito deterioradas numa das faces da pirâmide, calcule o número de maneiras diferentes de subir a pirâmide até ao topo, começando por uma qualquer das pedras da primeira camada, evitando as pedras que estão em falta ou muito deterioradas.
+Input
+
+Na primeira linha vem o número N que representa o número de pedras na primeira camada e também o número de níveis da pirâmide. Na segunda linha vem o número D de pedras em falta ou muito deterioradas. Nas D linhas seguintes vêm dois números, Ci e Pi, que descrevem cada uma destas pedras em falta ou muito deterioradas: C representa a camada (como indicado na figura), e Pi representa a posição da pedra nessa camada (onde 1 é a pedra mais à esquerda, 2 a 2ª pedra mais esquerda, etc).
+Output
+
+Uma única linha com indicando M, o número de maneiras diferente de subir a pirâmide. */
+
 import java.util.Scanner;
 import java.util.Arrays;
 class piramides{

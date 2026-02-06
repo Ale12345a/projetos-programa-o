@@ -1,3 +1,8 @@
+/*Escreva uma função
+void max_min(int vec[], int size, int *pmax, int *pmin);
+que determina o valor máximo e mínimo de um vector; os resultados devem ser atribuidos
+ao conteúdo dos apontadores pmax e pmin. Pode assumir que size é sempre maior que zero.*/
+
 #include <stdio.h>
 
 void max_min(int vec[], int size, int *pmax, int *pmin) {

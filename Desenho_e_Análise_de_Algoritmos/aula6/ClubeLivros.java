@@ -1,3 +1,20 @@
+/*O Problema
+
+Dados os membros de um clube de livros e os livros que eles gostam, consegues descobrir uma maneira de todos receberem um livro que gostem?
+Input
+
+O input contém vários casos de teste, sendo que na primeira linha do input vem um inteiro C indicando quantos casos se seguem.
+
+Cada caso de teste começa com uma linha indicando N, o número de pessoas. A segunda linha de cada caso contém M, o número total de "declarações de interesse". Seguem-se M linhas, cada uma com dois inteiros A e B indicando que o membro A gosta do livro que o membro B trouxe (0 ≤ A,B < N, ou seja, os membros são numerados de 0 a N-1). Os números A e B nunca são iguais (um membro nunca gosta do livro que ele próprio trouxe).
+Output
+
+Uma linha para cada caso de teste, na mesma ordem em que aparecem no input, contendo YES se podemos encontrar um livro para cada membro e NO caso contrário.
+
+São garantidos os seguintes limites em todos os casos de teste que irão ser colocados ao programa:
+1 ≤ C ≤ 5 	    	Número de casos de teste
+2 ≤ N ≤ 1 000 	    	Número de pessoas
+1 ≤ M ≤ 10 000 	    	Número de declarações de interesse */
+
 import java.util.*;
 
 public class ClubeLivros {

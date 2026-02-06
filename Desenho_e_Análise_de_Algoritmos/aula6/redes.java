@@ -1,3 +1,14 @@
+/*O Problema
+
+Dado um conjunto de pontos de contacto e as suas respectivas ligações, a tua tarefa é descobrir o número de redes diferentes que existem no circuito. A figura seguinte ilustra um circuito com 3 redes.
+
+Input
+
+Na primeira linha vem um número N indicando o número de pontos de contacto existentes. Na segunda linha vem um número L indicando o número de ligações existentes. Seguem-se L linhas, cada uma com um par de números diferentes indicando que pontos de contacto estão conectados pela ligação. Os pontos de contacto são sempre identificados por números de 1 até N. Note que as ligações não vêm por nenhuma ordem em específico e que nunca aparecem ligações repetidas.
+Output
+
+Deve ser imprimida uma única linha, contendo o número de redes do respectivo circuito. */
+
 import java.util.Scanner;
 import java.util.Arrays;
 

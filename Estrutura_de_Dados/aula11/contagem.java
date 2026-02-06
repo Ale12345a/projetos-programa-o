@@ -1,3 +1,12 @@
+/*O problema
+
+Dado uma texto, a tua tarefa é contar qual o número de ocorrências de cada palavra.
+Input
+
+Um texto num número arbitrário de linhas, sendo garantido que esse mesmo texto apenas contém letras minúsculas e espaços a separar palavras.
+Output
+O output deve ser constituído por uma linha por cada palavra que ocorre pelo menos uma vez no texto no formato "PALAVRA: NUMERO_OCORRENCIAS". As palavras devem vir por ordem alfabética.  */
+
 import java.util.Scanner;
 import java.util.LinkedList;
 

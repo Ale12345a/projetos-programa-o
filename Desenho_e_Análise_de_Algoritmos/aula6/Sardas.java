@@ -1,3 +1,17 @@
+/*O Problema
+
+A tua tarefa é dizer à Sara qual a maneira de ligar todas as sardas de modo a minimizar a quantidade de tinta usada. A pequena Sara liga as sardas desenhando linhas rectas entre pares de sardas, possivelmente levantando a caneta entre linhas. Quando a Sara termina, deve existir uma sequência de linhas entre uma sarda e qualquer outra sarda.
+Input
+
+A primeira linha contém um único inteiro N, o número de sardas.
+
+Seguem-se N linhas, cada uma com dois inteiros separados por um espaço indicando a posição (x,y) de uma sarda.
+Output
+
+Uma única linha com um número indicando a quantidade de tinta que a Sara deve gastar para ligar todas as sardas.
+
+Para ser considerada correcta, a diferença entre número que escreveu e o número correto deve ser inferior ou igual a 0.01 (este problema tem um avaliador especial para verificar se isso acontece). Por exemplo, se a resposta correcta for "1.2345" qualquer uma das seguintes respostas seria aceite: "1.23", "1.24, "1.22", "1.234" ou "1.235" (já "1.3" não seria aceite, pois |1.2345 - 1.3| > 0.01). */
+
 import java.util.*;
 import java.io.*;
 

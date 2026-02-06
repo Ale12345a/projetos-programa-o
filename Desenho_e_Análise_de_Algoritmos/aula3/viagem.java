@@ -1,3 +1,15 @@
+/*O Problema
+
+Dado um conjunto de N distâncias, e P perguntas (queries), cada uma indicando um número Ki de dias, a tua tarefa é calcular, para cada pergunta, qual o custo ótimo, ou seja, qual o caminho que minimiza a maior distância num único dia, tal com atrás explicado.
+Input
+
+Na primeira linha do input vem um único número indicando N, a quantidade de distâncias a considerar. Segue-se uma linha com N inteiros Di, indicando as distâncias entre locais de acampamento.
+
+Na terceira linha vem um número P, indicando quantidade de perguntas. Seguem-se P linhas, cada uma com um inteiro Ki indicando o número de dias em que o Aniceto deseja dividir o percurso.
+Output
+
+O output deve ser constituído por P linhas, uma por cada pergunta, na mesma ordem em que vinham no input. Cada uma das linhas deve indicar o custo ótimo respetivo, ou seja, a menor distância máxima de uma partição em Ki dias das distâncias dadas. */
+
 import java.util.*;
 public class viagem {
 

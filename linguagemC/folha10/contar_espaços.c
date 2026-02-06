@@ -1,3 +1,5 @@
+//O resultado deve ser o número de espaços na cadeia.
+
 #include <stdio.h>
 
 int contar_espacos(char *str) {

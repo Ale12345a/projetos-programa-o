@@ -1,3 +1,10 @@
+/*Implemente uma função void ordenar(char str[]) que ordena os carateres numa ca-
+deia pelos seus códigos. Por exemplo: se str = "ALGORITMO" então após execução devemos
+ter str = "AGILMOORT".
+Sugestão: cadeias de carateres em linguagem C são variáveis indexadas, pelo que podemos
+usar um dos algoritmos de ordenação apresentados nas aulas teóricas (seleção, inserção ou
+quicksort). Pode determinar o número de carateres da cadeia usando strlen.*/
+
 #include <stdio.h>
 #include <string.h>
 

@@ -1,3 +1,11 @@
+/*Dena duas funções
+int soma_diagonal1(int mat[N][N]);
+int soma_diagonal2(int mat[N][N]);
+que dadas matrizes N × N soma: (1) os valores na diagonal principal (isto, tais que índices
+i, j são iguais); (2) os valores na diagonal secundária (isto é, tais que os índices satisfazem
+i + j = N − 1). As funções devem funcionar para qualquer dimensão N declarada como
+constante usando #define.*/
+
 #include <stdio.h>
 
 #define N 3  // Dimensão da matriz

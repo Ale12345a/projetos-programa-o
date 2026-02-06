@@ -1,3 +1,11 @@
+/*Escreva uma função void reduzir(int *pnum, int *pdenom) que reduz uma fra-
+ção de numerador e denominador *pnum e *pdenom à forma simplicada. O numerador e
+denominador devem ser modicados por meio dos apontadores pnum e pdenom. Pode assumir
+que o denominador é sempre diferente de zero.
+Sugestão: para simplicar uma fração basta dividir o numerador e o denominador pelo
+seu máximo divisor comum (pode usar o algoritmo de Euclides apresentado na aula 7 para
+o calcular).*/
+
 #include <stdio.h>
 
 // Função auxiliar para calcular o MDC usando o algoritmo de Euclides

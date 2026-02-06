@@ -1,3 +1,15 @@
+/*O Problema
+
+Dada uma sequência de N bakugans, descrita pelas energias Ei de cada um deles, bem como uma série de F fotos, cada uma indicando que contém os bakugans entre as posições Ai e Bi, a tua tarefa é calcular, para cada foto, a soma das energias dos bakugans com posições no intervalo [Ai, Bi].
+Input
+
+Na primeira linha do input vem um inteiro N indicando o número de bakugans, seguida da uma linha contendo N inteiros Ei, indicando as energias da sequência de bakugans.
+
+A terceira linha contém um inteiro F indicando o número de fotos. Seguem-se F linhas, cada uma contendo dois inteiros Ai e Bi indicando respetivamente a posição de início e de final da foto correspondente.
+Output
+
+O output deve conter F linhas. A i-ésima linha deve conter um único inteiro representando a soma de energia dos bakugans contidas nas posições entre Ai e Bi, inclusive. */
+
 import java.util.Scanner;
 import java.util.Arrays;
 

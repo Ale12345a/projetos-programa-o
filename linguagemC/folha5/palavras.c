@@ -1,3 +1,15 @@
+/*Escreva um programa para contar palavras da entrada-padrão. Considere que as pa-
+lavras são sequências de carateres normais (e.g. letras, algarismos ou sinais de pontuação)
+separados por carateres brancos (espaços, tabulação ou mudanças de linha, ou seja, ' ',
+'\t' ou '\n').
+Por exemplo, o texto seguinte contém 13 palavras (note que a sequência --- é considerada
+uma palavra):
+To be or not to be, that is the question.
+--- William Shakespeare
+Sugestão: Utilize duas variáveis para guardar os dois últimos carateres lidos; podemos
+então contar o número de vezes que um carater normal (i.e., não branco) é seguido de um
+carater branco.*/
+
 #include <stdio.h>
 
 int main() {

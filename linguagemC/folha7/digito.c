@@ -1,3 +1,8 @@
+/*Escreva uma função int algum_digito(char str[]) que testa se uma cadeia é con-
+tém algum carater de dígito decimal ('0' e '9'). O resultado deve ser 1 em caso armativo
+e 0 em caso negativo.
+Sugestão: utilize a função isdigit da biblioteca-padrão.*/
+
 #include <stdio.h>
 #include <ctype.h>  // para isdigit()
 

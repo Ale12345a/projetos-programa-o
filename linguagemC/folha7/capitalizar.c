@@ -1,3 +1,9 @@
+/*Escreva uma função void capitalizar(char str[]) que transforma todas as letras
+duma cadeia em maísculas; outros carateres devem car inalterados. O argumento é uma
+cadeia de carateres (não necessariamente letras) terminada por \0.
+Sugestão: use a função toupper da biblioteca padrão para transformar cada carater em
+maíscula.*/
+
 #include <stdio.h>
 #include <ctype.h>  // para toupper()
 

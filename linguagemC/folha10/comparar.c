@@ -1,3 +1,9 @@
+/*Considere a função apresentada na aula teórica 14 para comparar igualdade de
+cadeias de carateres. Prentende-se que escreva uma versão alternativa desta função usando
+apontadores em vez de índices. A função deve ter a declaração
+int comparar(char *str1, char *str2);
+O resultado deve ser 1 se as cadeias são iguais e 0 se são diferentes.*/
+
 #include <stdio.h>
 
 int comparar(char *str1, char *str2) {

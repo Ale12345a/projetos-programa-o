@@ -1,3 +1,9 @@
+/*Escreva um programa que lê uma sequência de valores inteiros positivos terminada por
+-1 e no nal escreve toda a sequência mas sem repetidos.
+Sugestão: guarde os valores numa variável indexada à medida que são lidos; de cada vez que
+lê um novo valor pode vericar se já é repetido (e nesse caso não o guarde novamente). No
+nal imprima todos os valores guardados. */
+
 #include <stdio.h>
 
 int repetidos(int vec[], unsigned size) {

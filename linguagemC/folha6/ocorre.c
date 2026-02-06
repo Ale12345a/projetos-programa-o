@@ -1,3 +1,7 @@
+/*Escreva uma função int ocorre(int vec[], int size, int val) que procura um
+valor val no elementos de um vector vec. Se o valor ocorre como um dos elementos do
+vector, o resultado deve ser 1; caso contrário deve ser 0.*/
+
 #include <stdio.h>
 
 int ocorre(int vec[], int size, int val) {

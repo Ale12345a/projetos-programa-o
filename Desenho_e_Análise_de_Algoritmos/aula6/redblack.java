@@ -1,5 +1,22 @@
 // Codigo para o problema [DAA 022] Arvores Red-Black
 // Base: Pedro Ribeiro (DCC/FCUP)
+/*O Problema
+
+Dada uma árvore binária constituída unicamente por nós pretos e vermelhos, a tua tarefa é determinar se ela é uma árvore red-black, ou seja, se é árvore binária de pesquisa e se obedece às propriedades descritas.
+Input
+
+Na primeira linha do input está um número A indicando a quantidade de árvores a considerar.
+
+Seguem-se A linhas, cada uma com Ni inteiros entre -1000 e 1000 descrevendo descrevendo uma árvore red-black em preorder (raíz, sub-árvore esquerda, sub-árvore direita). Um número positivo indica um nó preto com esse valor. Um número negativo indica um nó vermelho contendo o valor absoluto do número (ex: -5 indica um nó vermelho contendo o número 5). O número zero representa uma folha nula preta.
+
+A título de exemplo, a árvore da figura de cima é descrita por:
+
+12 -5 2 0 0 8 -7 0 0 -10 0 0 21 0 -32 0 0
+
+É garantido que não existem números repetidos na árvore.
+Output
+
+O output deve ter exactamente A linhas. Em cada uma delas deve ser imprimido SIM ou NAO consoante a árvore respectiva seja ou não uma red-black tree.  */
 
 import java.util.Scanner;
 

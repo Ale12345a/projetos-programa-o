@@ -1,3 +1,8 @@
+/*Escreva uma função int contar_maiores(int vec[], int size, int val) cujos
+argumento são uma variável indexada vec com tamanho size e um valor val e cujo resultado
+deve ser a contagem do número de elementos de vec que são estritamente maiores do que
+val.*/
+
 #include <stdio.h>
 
 int contar_maiores(int vec[], int size, int val) {

@@ -1,4 +1,14 @@
-/* Tive ajuda na parte final do Luís Leite(up201906750) */
+/*O Problema
+
+Dado um conjunto de N segmentos de recta com coordenadas [Li, Ri] e um número M, a tua tarefa é descobrir qual a menor quantidade possível de segmentos que cobrem o segmento [0,M].
+Input
+
+Na primeira linha do input vem um número M indicando o tamanho do segmento que queremos cobrir, tal como atrás explicado.
+
+Na segunda linha vem um número N, indicando a quantidade de segmentos a considerar. Seguem-se N linhas, cada uma com 2 inteiros indicando os pontos iniciais e finais de cada um dos segmentos, ou seja, Li e Ri.
+Output
+
+O output deve ser constituído por uma linha contendo um único número: a quantidade mínima de segmentos necessária para cobrir o segmento [0,M]. Para os casos de teste dados, é garantido que existe sempre maneira de cobrir o segmento [0,M]. */
 
 import java.util.Scanner;
 import java.util.Arrays;

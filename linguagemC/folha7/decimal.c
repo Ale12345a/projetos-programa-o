@@ -1,3 +1,7 @@
+/*Escreva uma função int decimal(char str[]) que converte uma cadeia de cara-
+teres com algarismos de 0 a 9 no valor inteiro decimal correspondente. Por exemplo:
+decimal("1234") deve dar retornar o inteiro 1234.*/
+
 #include <stdio.h>
 
 int decimal(char str[]) {

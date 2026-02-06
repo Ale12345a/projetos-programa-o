@@ -1,3 +1,15 @@
+/*O Problema
+
+Dada um conjunto S de N números inteiros, e uma sequência de Q perguntas (queries), cada uma indicando um número Pi, a tua tarefa é descobrir qual é a soma de dois números diferentes de S que está mais próxima do número Pi de cada pergunta.
+Input
+
+Na primeira linha do input vem um único número indicando N, o tamanho do conjunto S de números. Na segunda linha vêm os números Si do conjunto (é garantido que são todos números distintos).
+
+Na terceira linha vem um número Q, indicando quantidade de perguntas, seguindo-se na quarta linha os números Pi de cada pergunta.
+Output
+
+O output deve ser constituído por Q linhas, uma por cada pergunta, na mesma ordem em que vinham no input. Cada uma das linhas deve indicar a soma mais próxima da respectiva pergunta. No caso de existirem várias somas à mesma distância mínima, devem vir todas, por ordem crescente e separadas por um espaço. */
+
 import java.util.Scanner;
 import java.util.Arrays;
 import java.lang.Math;

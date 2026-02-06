@@ -1,4 +1,24 @@
-//DAA030
+/*Tarefa
+
+Dada um grafo conexo não dirigido e não pesado descrevendo uma rede biológica, a tua tarefa é calcular o seu diâmetro, o seu raio, quais os nós centrais e quais os nós periféricos.
+Input
+
+Na primeira linha vem um único número inteiro N indicando o número de nós do grafo a considerar. Os nós são identificados por números inteiros consecutivos de 1 até N.
+
+Na segunda linha vem um único número inteiro E indicando o número de arestas do grafo. Seguem-se E linhas, cada uma contendo dois inteiros A e B indicando que existe uma aresta (ligação direta) entre os nós A e B.
+
+As arestas podem vir por qualquer ordem mas é garantido que nunca aparecem arestas repetidas. É também garantido que dão origem a um grafo completamente conexo.
+
+O exemplo de input corresponde à figura dada anteriormente.
+Output
+
+Na primeira linha deve vir um único inteiro indicando o diâmetro da rede.
+
+Na segunda linha deve vir um único inteiro indicando o raio.
+
+Na terceira linha devem vir os nós centrais. Se existir mais que um nó central, deves escrevê-los por ordem crescente e com um espaço a separar cada par de nós.
+
+Na quarta linha devem vir os nós periféricos. Se existir mais que um nó periférico, deves escrevê-los por ordem crescente e com um espaço a separar cada par de nós. */
 
 import java.util.*;
 
