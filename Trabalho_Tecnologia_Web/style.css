@@ -1,0 +1,372 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #5271FF;
+    margin: 0; /* Remova as margens padrão do corpo */
+    padding: 0; /* Remova o preenchimento padrão do corpo */
+}
+
+
+
+h1 {
+    color: #333;
+    
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+}
+
+.start-button, .return-button, .login-button, .return-button-2 {
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #E6535F;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.start-button:hover, .return-button:hover, .quit-game:hover, .login-button:hover, .return-button-2:hover{
+    background-color: #ab4049
+}
+
+.start-button:active, .return-button:active, .quit-game:active, .login-button:active, .return-button-2:active {
+    background-color: #ab4049;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+.game-settings {
+    margin-bottom: 20px;
+}
+
+.side_board {
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+    grid-template-columns: repeat(6, 50px);
+}
+
+.game-container {
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+    grid-template-columns: repeat(6, 50px);
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    border: 1px solid #333;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playerB, .playerW {
+    background-size: 100% 100%; /* Isso fará com que a imagem ocupe 100% da largura e altura do tile */
+}
+
+.game-info {
+    display: none;
+    margin-top: 20px;
+}
+
+.game-info.active {
+    display: block;
+}
+
+.level-label {
+    display: none;
+}
+
+.level {
+    display: none;
+    margin: auto; 
+    text-align: center; 
+}
+
+.color-choice-set {
+    display: none;
+}
+.color-choice{
+    display: none;
+    margin: auto; 
+    text-align: center
+}
+
+.header-bar {
+    background-color: #E6535F; /* Cor da barra superior */
+    height: 60px; /* Defina a altura desejada */
+    
+}
+
+.img-dara {
+    width: 100px; /* Tamanho do logo */
+    display: block; /* Para centralizar o logo horizontalmente */
+    margin: 0 auto;
+    float: left; /* Define o logo à esquerda */
+    margin-left: 20px;
+    margin-top : 10px;
+
+}  
+
+
+.rules-button {
+    background-color: #E6535F; /* Cor de fundo do botão */
+    color: #5271FF; /* Cor do texto no botão */
+    border: 0px solid #E6535F; /* Borda do botão */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 23px; /* Tamanho da fonte */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+    float: left; /* Define o botão à direita */
+    margin-top: 5px;
+    color: transparent; /* Torna o texto do botão transparente (invisível) */
+    background-image: url('assets/rules.png'); /* Substitua 'caminho-da-imagem.jpg' pelo caminho da sua imagem */
+    background-size: 90px; /* Tamanho da imagem */
+    background-position: center; /* Centraliza a imagem no botão */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    margin-top: 8px;
+    margin-left: 25px; /* Desloca o botão 20px para a direita */
+
+
+}
+
+.leaderboard-button {
+    background-color: #E6535F; /* Cor de fundo do botão */
+    color: #5271FF; /* Cor do texto no botão */
+    border: 0px solid #E6535F; /* Borda do botão */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 23px; /* Tamanho da fonte */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+    float: left; /* Define o botão à direita */
+    margin-top: 5px;
+    color: transparent; /* Torna o texto do botão transparente (invisível) */
+    background-image: url('assets/leaderboard.png'); /* Substitua 'caminho-da-imagem.jpg' pelo caminho da sua imagem */
+    background-size: 160px; /* Tamanho da imagem */
+    background-position: center; /* Centraliza a imagem no botão */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    margin-top: 8px;
+    margin-left: 10px; /* Desloca o botão 20px para a direita */
+
+}
+
+.logout-button {
+    background-color: #E6535F; /* Cor de fundo do botão */
+    color: #5271FF; /* Cor do texto no botão */
+    border: 0px solid #E6535F; /* Borda do botão */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 23px; /* Tamanho da fonte */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+    float: right; /* Define o botão à direita */
+    margin-top: 5px;
+    color: transparent; /* Torna o texto do botão transparente (invisível) */
+    background-image: url('assets/logout.png'); /* Substitua 'caminho-da-imagem.jpg' pelo caminho da sua imagem */
+    background-size: 90px; /* Tamanho da imagem */
+    background-position: center; /* Centraliza a imagem no botão */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    margin-top: 8px;
+    margin-right: 10px; /* Desloca o botão 20px para a direita */
+    display : none;
+
+}
+
+
+
+.main-section{
+    background:#D0E2EE;
+    border-radius: 10px;
+    padding: 15px;
+    width: 1000px;
+    margin: auto;
+    box-shadow:5px 5px 10px black;
+    margin-top: 15px;
+    display: none;
+
+}
+
+.hidden-section {
+    display: none; /* Oculta o elemento */
+    z-index: 2; /* Defina um z-index maior para que fique por cima da main-section */
+    background:#D0E2EE;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow:5px 5px 10px black;
+    margin-top: 15px;
+
+}
+
+.login-section {
+    display: block;
+    z-index: 3; /* Defina um z-index maior para que fique por cima da main-section */
+    background:#D0E2EE;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow:5px 5px 10px black;
+    margin-top: 15px;
+
+}
+
+.leaderboard-section {
+    display: none;
+    z-index: 3; /* Defina um z-index maior para que fique por cima da main-section */
+    background:#D0E2EE;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow:5px 5px 10px black;
+    margin-top: 15px;
+}
+
+#leaderboard-table {
+    text-align: center;
+    margin: auto;
+}
+
+.rules-img {
+    width: 30%
+}
+
+#remove-display {
+    display: none;
+}
+
+#move-piece-display {
+    display: none;
+}
+
+#place-piece-display {
+    display: none;
+}
+
+.quit-game {
+    display: none;
+    margin: auto;
+    margin-top: 10px ;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #E6535F;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.game-config {
+    display: block;
+}
+
+.side_board_1 {
+    display: grid;
+    grid-template-columns: repeat(4, 45px);
+    grid-gap: 1px;
+    text-align: center;
+    float : left;
+    margin-left: 50px;
+
+}
+
+.side_board_2 {
+    display: grid;
+    grid-template-columns: repeat(4, 45px);
+    grid-gap: 1px;
+    text-align: center;
+    float : right;
+    margin-right: 50px;
+    
+}
+
+.side-boards {
+    display: flex;
+    justify-content: space-between; /* Espaço igual entre side_board_1 e side_board_2 */
+    align-items: flex-start; /* Alinha os elementos verticalmente ao topo */
+    margin-top: 20px;
+}
+
+
+.white-piece {
+    background-image : url('assets/white.png');
+    width: 50px;
+    height: 50px;
+
+}
+
+.black-piece {
+    background-image : url('assets/black.png');
+    width: 50px;
+    height: 50px;
+}
+
+body {
+    text-align: center;
+  }
+  
+  #ranking-container {
+    display: inline-block; /* This will make the container only as wide as its contents */
+    text-align: left; /* Reset text alignment for the contents inside */
+  }
+  
+  #ranking-container table {
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  #ranking-container th,
+  #ranking-container td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+
+.player-toplay-online{
+    display: none;
+}
+
+.invalid_move{
+    display: none;
+}
+
+.tela {
+    z-index: 1000;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.leaderboard-table-off {
+    display: none;
+    text-align: center;
+    margin: auto; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Adiciona margem superior (opcional) */
+    width: 80%; /* Largura definida para centralizar */
+}
+.login-error{
+    display: none;
+
+}
