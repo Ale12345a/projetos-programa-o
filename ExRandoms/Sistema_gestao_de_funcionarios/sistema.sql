@@ -53,15 +53,14 @@ ON e.employee_id = w.employee_id
 GROUP BY e.name;
 
 --Funcionário que trabalhou mais horas
-SELECT
+SELECT TOP 1
 e.name,
 SUM(w.hours) AS total_hours
 FROM employees e
 JOIN work_hours w
 ON e.employee_id = w.employee_id
 GROUP BY e.name
-ORDER BY total_hours DESC
-LIMIT 1;
+ORDER BY total_hours DESC;
 
 --Salário médio da empresa
 SELECT
