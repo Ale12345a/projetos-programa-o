@@ -1,4 +1,4 @@
-class A{
+class natal{
     public static void main(String[]a){
         System.out.println("_____________*_______________");
         System.out.println("____________***______________");

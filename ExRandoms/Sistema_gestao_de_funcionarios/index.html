@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Sistema de Funcionários</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Sistema de Gestão de Funcionários</h1>
+
+<h2>Adicionar Funcionário</h2>
+
+<form id="employeeForm">
+
+<input type="text" id="name" placeholder="Nome" required>
+
+<select id="department">
+<option>IT</option>
+<option>Marketing</option>
+<option>Financeiro</option>
+<option>RH</option>
+</select>
+
+<input type="number" id="hours" placeholder="Horas" min="0">
+
+<input type="number" id="rate" placeholder="Valor Hora" step="0.01">
+
+<button type="submit">Adicionar</button>
+
+</form>
+
+<h2>Pesquisar</h2>
+
+<input type="text" id="search" placeholder="Nome funcionário">
+
+<h2>Funcionários</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>ID</th>
+<th>Nome</th>
+<th>Departamento</th>
+<th>Horas</th>
+<th>Valor Hora</th>
+<th>Salário</th>
+</tr>
+</thead>
+
+<tbody id="employeeTable"></tbody>
+
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
