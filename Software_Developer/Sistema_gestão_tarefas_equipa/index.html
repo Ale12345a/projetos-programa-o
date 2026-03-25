@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Team Task Manager</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>Team Task Manager</h1>
+
+<form id="taskForm">
+
+<input id="title" placeholder="Task title" required>
+
+<select id="employee">
+<option>Ana</option>
+<option>João</option>
+<option>Pedro</option>
+</select>
+
+<select id="priority">
+<option>Low</option>
+<option>Medium</option>
+<option>High</option>
+</select>
+
+<button>Add Task</button>
+
+</form>
+
+<table>
+
+<thead>
+<tr>
+<th>Task</th>
+<th>Employee</th>
+<th>Priority</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="taskTable"></tbody>
+
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>

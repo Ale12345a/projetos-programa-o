@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Inventory Dashboard</h1>
+        <canvas id="stockChart" width="600" height="400"></canvas>
+        <canvas id="categoryChart" width="600" height="400"></canvas>
+        <hr>
+        <a href="index.html">Back to Inventory</a>
+    </div>
+
+    <script>
+        const apiUrl = "http://127.0.0.1:5000/products";
+
+        async function loadDashboard() {
+            const res = await fetch(apiUrl);
+            const products = await res.json();
+
+            // Stock Chart
+            const stockCtx = document.getElementById('stockChart').getContext('2d');
+            new Chart(stockCtx, {
+                type: 'bar',
+                data: {
+                    labels: products.map(p => p.name),
+                    datasets: [{
+                        label: 'Quantity in Stock',
+                        data: products.map(p => p.quantity),
+                        backgroundColor: 'rgba(52, 152, 219, 0.7)',
+                        borderColor: 'rgba(41, 128, 185, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: { legend: { display: false } },
+                    scales: { y: { beginAtZero: true } }
+                }
+            });
+
+            // Category Chart
+            const categories = [...new Set(products.map(p => p.category))];
+            const categoryCounts = categories.map(cat =>
+                products.filter(p => p.category === cat).length
+            );
+
+            const categoryCtx = document.getElementById('categoryChart').getContext('2d');
+            new Chart(categoryCtx, {
+                type: 'pie',
+                data: {
+                    labels: categories,
+                    datasets: [{
+                        data: categoryCounts,
+                        backgroundColor: ['#3498db', '#2ecc71', '#e74c3c', '#f1c40f']
+                    }]
+                },
+                options: { responsive: true }
+            });
+        }
+
+        loadDashboard();
+    </script>
+</body>
+</html>

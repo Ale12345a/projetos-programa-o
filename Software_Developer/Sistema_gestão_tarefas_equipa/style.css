@@ -1,0 +1,21 @@
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+table-layout:fixed;
+}
+
+th, td{
+padding:12px;
+text-align:left;
+border-bottom:1px solid #ddd;
+}
+
+th{
+background:#34495e;
+color:white;
+}
+
+tr:hover{
+background:#f2f2f2;
+}
