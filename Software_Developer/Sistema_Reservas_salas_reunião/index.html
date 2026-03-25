@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Meeting Room Booking</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>Meeting Room Booking</h1>
+
+<form id="bookingForm">
+
+<input id="employee" placeholder="Employee name" required>
+
+<select id="room">
+<option>Room A</option>
+<option>Room B</option>
+<option>Room C</option>
+</select>
+
+<input type="date" id="date" required>
+
+<input type="time" id="time" required>
+
+<button type="submit">Book Room</button>
+
+</form>
+
+<table>
+
+<thead>
+<tr>
+<th>Employee</th>
+<th>Room</th>
+<th>Date</th>
+<th>Time</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="bookingTable"></tbody>
+
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
