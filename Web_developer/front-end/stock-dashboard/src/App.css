@@ -1,0 +1,27 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+main {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #999;
+}

@@ -1,0 +1,6 @@
+#!/mnt/c/Users/alexs/projetos-programa-o/Web_developer/back-end/user_task_api/venv/bin/python3
+import sys
+from rsa.cli import verify
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(verify())
