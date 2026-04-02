@@ -1,0 +1,14 @@
+Total Revenue: 3200.0
+Top Product Overall: Laptop
+Top Category Overall: Electronics
+
+Average Price per Category:
+- Electronics: $633.33
+
+Top Product by Category:
+- Electronics: Laptop ($2700.0)
+
+Charts:
+- Monthly Revenue: charts/monthly_revenue.png
+- Quarterly Revenue: charts/quarterly_revenue.png
+- Top Product by Category: charts/top_product_by_category.png
