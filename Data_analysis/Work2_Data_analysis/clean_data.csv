@@ -1,0 +1,4 @@
+id,product,category,price,quantity,date,revenue
+1,Laptop,Electronics,900.0,2.0,2024-01-10,1800.0
+3,Headphones,Electronics,100.0,5.0,2024-02-01,500.0
+6,Laptop,Electronics,900.0,1.0,2024-03-20,900.0

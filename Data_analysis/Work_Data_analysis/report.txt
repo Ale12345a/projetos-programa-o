@@ -1,0 +1,10 @@
+Total Revenue: 3200.0
+Top Product Overall: Laptop
+Top Category Overall: Electronics
+
+Top Product by Category:
+- Electronics: Laptop ($2700.0)
+
+Monthly Revenue Chart: charts/monthly_revenue.png
+Quarterly Revenue Chart: charts/quarterly_revenue.png
+Top Product by Category Chart: charts/top_product_by_category.png

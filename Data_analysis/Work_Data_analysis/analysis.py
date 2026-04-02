@@ -1,0 +1,90 @@
+import pandas as pd
+import sqlite3
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
+
+# Criar pasta para gráficos
+os.makedirs("charts", exist_ok=True)
+
+# 1️⃣ Ler os dados
+df = pd.read_csv("raw_data.csv")
+print("=== RAW DATA ===")
+print(df)
+
+# 2️⃣ Limpeza de dados
+df = df.dropna()                       # Remove linhas com valores faltantes
+df = df[df["quantity"] > 0]            # Remove quantidades negativas
+df["date"] = pd.to_datetime(df["date"], errors="coerce")
+df = df.dropna()                        # Remove linhas com datas inválidas
+df["revenue"] = df["price"] * df["quantity"]
+
+df.to_csv("clean_data.csv", index=False)
+print("\n=== CLEAN DATA ===")
+print(df)
+
+# 3️⃣ Guardar na base de dados SQLite
+conn = sqlite3.connect("database.db")
+df.to_sql("sales", conn, if_exists="replace", index=False)
+print("\n=== DATA STORED IN DATABASE ===")
+
+# 4️⃣ Insights
+print("\n=== INSIGHTS ===")
+total_revenue = df["revenue"].sum()
+top_product = df.groupby("product")["revenue"].sum().idxmax()
+top_category = df.groupby("category")["revenue"].sum().idxmax()
+print(f"Total Revenue: {total_revenue}")
+print(f"Top Product: {top_product}")
+print(f"Top Category: {top_category}")
+
+# Receita por mês
+df["month"] = df["date"].dt.to_period("M")
+monthly_revenue = df.groupby("month")["revenue"].sum()
+
+# Receita por trimestre
+df["quarter"] = df["date"].dt.to_period("Q")
+quarterly_revenue = df.groupby("quarter")["revenue"].sum()
+
+# Produto mais rentável por categoria
+best_by_category = df.groupby(["category", "product"])["revenue"].sum().reset_index()
+best_by_category = best_by_category.sort_values(["category", "revenue"], ascending=[True, False]).drop_duplicates("category")
+
+# 5️⃣ Gerar gráficos
+plt.figure(figsize=(10,6))
+sns.barplot(x=monthly_revenue.index.astype(str), y=monthly_revenue.values, palette="Blues_d")
+plt.title("Monthly Revenue")
+plt.xticks(rotation=45)
+plt.ylabel("Revenue")
+plt.tight_layout()
+plt.savefig("charts/monthly_revenue.png")
+plt.close()
+
+plt.figure(figsize=(10,6))
+sns.barplot(x=quarterly_revenue.index.astype(str), y=quarterly_revenue.values, palette="Greens_d")
+plt.title("Quarterly Revenue")
+plt.ylabel("Revenue")
+plt.tight_layout()
+plt.savefig("charts/quarterly_revenue.png")
+plt.close()
+
+plt.figure(figsize=(10,6))
+sns.barplot(x=best_by_category["category"], y=best_by_category["revenue"], hue=best_by_category["product"], dodge=False)
+plt.title("Top Product by Category")
+plt.ylabel("Revenue")
+plt.tight_layout()
+plt.savefig("charts/top_product_by_category.png")
+plt.close()
+
+# 6️⃣ Criar relatório avançado
+with open("report.txt", "w") as f:
+    f.write(f"Total Revenue: {total_revenue}\n")
+    f.write(f"Top Product Overall: {top_product}\n")
+    f.write(f"Top Category Overall: {top_category}\n\n")
+    f.write("Top Product by Category:\n")
+    for idx, row in best_by_category.iterrows():
+        f.write(f"- {row['category']}: {row['product']} (${row['revenue']})\n")
+    f.write("\nMonthly Revenue Chart: charts/monthly_revenue.png\n")
+    f.write("Quarterly Revenue Chart: charts/quarterly_revenue.png\n")
+    f.write("Top Product by Category Chart: charts/top_product_by_category.png\n")
+
+print("\n✅ Analysis complete. Charts saved in 'charts/' and report.txt generated.")
