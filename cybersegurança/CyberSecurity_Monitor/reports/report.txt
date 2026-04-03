@@ -1,0 +1,18 @@
+=== CYBERSECURITY REPORT ===
+
+Total logs: 9
+Total alerts: 4
+
+=== ALERTS ===
+         type    user             details
+  Brute Force     bob     3 failed logins
+  Brute Force   david     3 failed logins
+ Out of Hours charlie 2026-04-01 02:15:00
+Suspicious IP   david             8.8.8.8
+
+=== RISK SCORES ===
+   user  risk_score
+  david          80
+    bob          50
+charlie          20
+  alice           0

@@ -1,0 +1,15 @@
+ALERT: Failed login by bruno from 10.0.1.20 at 2026-04-01 08:02:00
+ALERT: Failed login by bruno from 10.0.1.20 at 2026-04-01 08:03:00
+ALERT: Failed login by bruno from 10.0.1.20 at 2026-04-01 08:05:00
+ALERT: Failed login by diana from 8.8.4.4 at 2026-04-01 09:10:00
+ALERT: Failed login by diana from 8.8.4.4 at 2026-04-01 09:12:00
+ALERT: Failed login by diana from 8.8.4.4 at 2026-04-01 09:13:00
+ALERT: Failed login by diana from 8.8.4.4 at 2026-04-01 09:14:00
+ALERT: Failed login by eduardo from 203.0.113.25 at 2026-04-01 10:05:00
+ALERT: Failed login by fabio from 198.51.100.45 at 2026-04-01 10:15:00
+ALERT: Failed login by fabio from 198.51.100.45 at 2026-04-01 10:17:00
+ALERT: Failed login by hector from 203.0.113.88 at 2026-04-01 12:00:00
+ALERT: Failed login by hector from 203.0.113.88 at 2026-04-01 12:05:00
+ALERT: Failed login by joao from 10.1.1.15 at 2026-04-01 13:25:00
+ALERT: Failed login by joao from 10.1.1.15 at 2026-04-01 13:30:00
+ALERT: Failed login by lucas from 192.168.1.33 at 2026-04-01 14:20:00
