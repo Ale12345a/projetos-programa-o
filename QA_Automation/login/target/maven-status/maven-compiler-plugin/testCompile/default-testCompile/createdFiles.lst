@@ -1,0 +1,5 @@
+tests/DropdownTests.class
+tests/BaseTest.class
+tests/LoginTests.class
+tests/RegisterTests.class
+tests/UploadTests.class
