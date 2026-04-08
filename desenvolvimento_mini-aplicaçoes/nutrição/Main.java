@@ -28,6 +28,6 @@ public class Main {
 
         Statistics.showAllMeals(user);
         Statistics.showDailyStats(user);
-        System.out.println("✅ Nutrition analysis complete!");
+        System.out.println(" Nutrition analysis complete!");
     }
 }
