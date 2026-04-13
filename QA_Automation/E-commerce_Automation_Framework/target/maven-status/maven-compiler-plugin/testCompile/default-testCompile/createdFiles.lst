@@ -1,0 +1,5 @@
+data/TestData.class
+tests/api/ApiTests.class
+tests/web/LoginTests.class
+tests/web/CheckoutTests.class
+tests/BaseTest.class
