@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Disciplinas 4º Ano</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<div id="login">
+  <input id="user">
+  <input id="pass" type="password">
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="app" style="display:none">
+
+  <button onclick="logout()">Logout</button>
+
+  <h2>Disciplinas</h2>
+
+  <input id="nome">
+  <button onclick="add()">Adicionar</button>
+
+  <div id="lista"></div>
+  <div id="conteudos"></div>
+  <div id="conteudoDetalhe"></div>
+</div>
+
+<script src="assets/app.js"></script>
+
+</body>
+</html>
