@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Dashboard</h2>
+
+<button onclick="logout()">Logout</button>
+
+<h3>Stats</h3>
+<div id="stats"></div>
+
+<h3>Alunos</h3>
+<div id="list"></div>
+
+<div id="adminPanel" style="display:none">
+
+<h3>Admin</h3>
+
+<input id="nome">
+<input id="idade">
+<button onclick="create()">Criar</button>
+
+</div>
+
+<script>
+
+const token = localStorage.getItem("token");
+const role = localStorage.getItem("role");
+
+if(!token) window.location="index.html";
+
+if(role==="admin"){
+adminPanel.style.display="block";
+}
+
+load();
+
+function load(){
+
+fetch("api/alunos.php",{
+headers:{Authorization:"Bearer "+token}
+})
+.then(r=>r.json())
+.then(d=>{
+
+list.innerHTML="";
+
+d.data.forEach(a=>{
+list.innerHTML += `
+<p>
+${a.nome} (${a.idade})
+
+${role==="admin"?
+`<button onclick="del(${a.id})">X</button>
+<button onclick="edit(${a.id})">Edit</button>`:""}
+
+</p>`;
+});
+
+});
+
+fetch("api/stats.php",{
+headers:{Authorization:"Bearer "+token}
+})
+.then(r=>r.json())
+.then(d=>{
+stats.innerHTML =
+"Total: "+d.total_alunos+"<br>"+
+"Média: "+d.media_idade;
+});
+
+}
+
+function create(){
+
+fetch("api/alunos_create.php",{
+method:"POST",
+headers:{
+"Content-Type":"application/json",
+Authorization:"Bearer "+token
+},
+body:JSON.stringify({
+nome:nome.value,
+idade:idade.value
+})
+}).then(load);
+
+}
+
+function del(id){
+
+fetch("api/alunos_delete.php?id="+id,{
+headers:{Authorization:"Bearer "+token}
+}).then(load);
+
+}
+
+function edit(id){
+
+let n = prompt("nome");
+let i = prompt("idade");
+
+fetch("api/alunos_update.php",{
+method:"POST",
+headers:{
+"Content-Type":"application/json",
+Authorization:"Bearer "+token
+},
+body:JSON.stringify({id,nome:n,idade:i})
+}).then(load);
+
+}
+
+function logout(){
+localStorage.clear();
+window.location="index.html";
+}
+
+</script>
+
+</body>
+</html>
