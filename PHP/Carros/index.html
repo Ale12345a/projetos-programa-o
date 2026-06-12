@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Car Rental System</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="login">
+  <h2>Login Car Rental</h2>
+
+  <input id="user" placeholder="username">
+  <input id="pass" type="password" placeholder="password">
+
+  <button onclick="login()">Entrar</button>
+</div>
+
+<!-- APP -->
+<div id="app" style="display:none">
+
+  <header>
+    <h2>Car Rental Dashboard</h2>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <nav>
+    <button onclick="loadStats()">Dashboard</button>
+    <button onclick="loadClientes()">Clientes</button>
+    <button onclick="loadVeiculos()">Veículos</button>
+    <button onclick="loadReservas()">Reservas</button>
+    <button onclick="loadPagamentos()">Pagamentos</button>
+  </nav>
+
+  <main>
+
+    <section id="stats"></section>
+    <section id="clientes"></section>
+    <section id="veiculos"></section>
+    <section id="reservas"></section>
+    <section id="pagamentos"></section>
+
+    <!-- CALENDÁRIO -->
+    <section id="calendar">
+      <h3>Calendário de Disponibilidade</h3>
+
+      <input type="date" id="inicio">
+      <input type="date" id="fim">
+      <button onclick="loadCalendar()">Ver disponibilidade</button>
+      <div id="calendarResult"></div>
+    </section>
+
+  </main>
+
+</div>
+
+<script src="assets/app.js"></script>
+
+</body>
+</html>
