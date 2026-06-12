@@ -108,9 +108,13 @@ function loadConteudos(id) {
 
       let html = "<h3>Conteúdos</h3>";
 
-      html += `
-        <button onclick="addConteudo(${id})">+ adicionar conteúdo</button>
-      `;
+      if (role === "admin") {
+        html += `
+          <button onclick="addConteudo(${id})">
+            + adicionar conteúdo
+          </button>
+        `;
+      }
 
       html += "<ul>";
 

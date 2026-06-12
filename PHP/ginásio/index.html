@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ginásio SFV</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="login">
+  <h2>Login Ginásio</h2>
+
+  <input id="user" placeholder="username">
+  <input id="pass" type="password" placeholder="password">
+
+  <button onclick="login()">Entrar</button>
+</div>
+
+<!-- APP -->
+<div id="app" style="display:none">
+
+  <header>
+    <h2>Dashboard Ginásio</h2>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <nav>
+    <button onclick="loadMembros()">Membros</button>
+    <button onclick="loadAulas()">Aulas</button>
+    <button onclick="loadTreinos()">Treinos</button>
+    <button onclick="loadPagamentos()">Pagamentos</button>
+  </nav>
+
+  <main>
+
+    <section id="stats"></section>
+
+    <section id="membros"></section>
+
+    <section id="aulas"></section>
+
+    <section id="treinos">
+
+      <h3>Treinos</h3>
+
+      <select id="membroSelect"></select>
+
+      <button onclick="addTreino()">
+        Adicionar treino
+      </button>
+
+    </section>
+
+    <section id="pagamentos">
+
+      <h3>Pagamentos</h3>
+
+      <select id="membroSelectPagamentos"></select>
+
+      <button onclick="addPagamento()">
+        Registar pagamento
+      </button>
+
+    </section>
+
+  </main>
+
+</div>
+
+  <script src="assets/app.js"></script>
+
+</body>
+</html>
