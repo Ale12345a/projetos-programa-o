@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gestão de Eventos</title>
+
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="login" class="center-card">
+
+  <h2>Login</h2>
+
+  <input
+    id="username"
+    placeholder="Username"
+  >
+
+  <input
+    id="password"
+    type="password"
+    placeholder="Password"
+  >
+
+  <button onclick="login()">
+    Entrar
+  </button>
+
+</div>
+
+<!-- APP -->
+<div id="app" style="display:none">
+
+  <header class="topbar">
+
+    <h1>
+    🎫 Gestão de Eventos
+    </h1>
+
+    <div>
+
+      <span id="roleInfo"></span>
+
+        <button onclick="logout()">
+        Logout
+        </button>
+    </div>
+
+  </header>
+
+  <!-- STATS (ADMIN) -->
+
+  <section class="panel" id="statsPanel" style="display:none">
+
+    <h2>
+      📊 Estatísticas
+    </h2>
+
+    <div id="stats">
+
+      <p>Carregando...</p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ADMIN -->
+
+  <div id="adminPanel" style=" display:none; padding:10px;">
+
+    <button onclick=" toggleCreateEvent()">
+      ➕ Criar Evento
+    </button>
+
+  </div>
+
+  <!-- FORM -->
+
+  <div id="createEventBox" style="display:none; padding:10px;">
+
+    <h3>
+      Criar Evento
+    </h3>
+
+    <input id="ev_name" placeholder="Nome"/>
+
+    <input id="ev_location" placeholder="Local"/>
+
+    <input id="ev_date" type="datetime-local"/>
+
+    <input id="ev_capacity" type="number" placeholder="Capacidade"/>
+
+    <input id="ev_price" type="number" placeholder="Preço"/>
+
+    <button onclick="submitCreateEvent()">
+      Criar
+    </button>
+
+  </div>
+
+
+  <main class="grid">
+
+    <!-- EVENTOS -->
+
+    <section class="panel">
+      <h2>
+        📅 Eventos
+      </h2>
+        <div id="events"></div>
+    </section>
+
+
+    <!-- DETALHES -->
+
+    <section class="panel">
+      <h2>
+        ℹ️ Detalhes
+      </h2>
+      <div id="eventDetail"></div>
+    </section>
+
+    <!-- TICKETS -->
+
+    <section class="panel">
+      <h2>
+        🎟️ Bilhetes
+      </h2>
+      <div id="tickets"></div>
+    </section>
+
+  </main>
+
+</div>
+
+<script src="assets/app.js"></script>
+
+</body>
+</html>
