@@ -225,7 +225,7 @@ public class BSTree<T extends Comparable<? super T>> {
 
    // --------------------------------------------------------
    
-   // Imprimir arvore numa visita em largura (usando TAD Pilha)
+   // Imprimir arvore numa visita em profundidade (usando TAD Pilha)
    public void printDFS() {
       System.out.print("DFS:");
       
