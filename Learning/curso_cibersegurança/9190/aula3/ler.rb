@@ -1,0 +1,31 @@
+# TRES formas de ler um ficheiro, e so uma serve quando ele e grande.
+File.read("acesso.log") # o ficheiro TODO em memoria
+File.readlines("acesso.log") # um array com TODAS as linhas
+File.foreach("acesso.log") do |linha| # uma linha de cada vez
+puts linha
+end
+# O nome entre barras e o que TU quiseres: e o nome da linha que esta a passar.
+File.foreach("acesso.log") do |x|
+puts x
+end
+
+#192.168.1.10 - - [29/Sep/2026:09:12:04] "GET /index.html" 200
+#10.0.0.55 - - [29/Sep/2026:09:15:31] "POST /login" 401
+#10.0.0.55 - - [29/Sep/2026:09:15:48] "POST /login" 401
+#192.168.1.10 - - [29/Sep/2026:09:16:02] "GET /produtos" 200
+#10.0.0.55 - - [29/Sep/2026:09:16:12] "POST /login" 401
+#203.0.113.9 - - [29/Sep/2026:09:18:55] "GET /admin" 403
+#192.168.1.22 - - [29/Sep/2026:09:21:37] "GET /contactos" 200
+#203.0.113.9 - - [29/Sep/2026:09:23:10] "GET /wp-admin" 404
+#192.168.1.10 - - [29/Sep/2026:09:25:44] "GET /favicon.ico" 404
+#10.0.0.55 - - [29/Sep/2026:09:31:19] "POST /login" 200
+#192.168.1.10 - - [29/Sep/2026:09:12:04] "GET /index.html" 200
+#10.0.0.55 - - [29/Sep/2026:09:15:31] "POST /login" 401
+#10.0.0.55 - - [29/Sep/2026:09:15:48] "POST /login" 401
+#192.168.1.10 - - [29/Sep/2026:09:16:02] "GET /produtos" 200
+#10.0.0.55 - - [29/Sep/2026:09:16:12] "POST /login" 401
+#203.0.113.9 - - [29/Sep/2026:09:18:55] "GET /admin" 403
+#192.168.1.22 - - [29/Sep/2026:09:21:37] "GET /contactos" 200
+#203.0.113.9 - - [29/Sep/2026:09:23:10] "GET /wp-admin" 404
+#192.168.1.10 - - [29/Sep/2026:09:25:44] "GET /favicon.ico" 404
+#10.0.0.55 - - [29/Sep/2026:09:31:19] "POST /login" 200
