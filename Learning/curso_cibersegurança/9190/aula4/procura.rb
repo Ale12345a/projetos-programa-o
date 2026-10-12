@@ -12,7 +12,7 @@ end
 padrao = Regexp.new(termo)
 encontradas = 0
 
-File.foreach("acesso.log").with_index(1) do |linha, n|
+File.foreach("acesso_alargado.log").with_index(1) do |linha, n|
   if linha =~ padrao
     encontradas += 1
     puts " linha #{n}: #{linha.chomp}"

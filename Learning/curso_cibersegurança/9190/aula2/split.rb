@@ -4,7 +4,7 @@ puts campos[0]
 puts campos[6]
 puts "4: #{campos[4]}"
 # A lista inteira, tal como o Ruby a guarda:
-puts campos.inspect
+puts campos.inspect #output de toda a linha
 
 #10.0.0.55
 #401

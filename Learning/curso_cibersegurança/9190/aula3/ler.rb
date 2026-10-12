@@ -1,7 +1,7 @@
 # TRES formas de ler um ficheiro, e so uma serve quando ele e grande.
 File.read("acesso.log") # o ficheiro TODO em memoria
 File.readlines("acesso.log") # um array com TODAS as linhas
-File.foreach("acesso.log") do |linha| # uma linha de cada vez
+File.foreach("acesso.log") do |linha| # uma linha de cada vez -> mais eficiente do que file.read e file.readline
 puts linha
 end
 # O nome entre barras e o que TU quiseres: e o nome da linha que esta a passar.
