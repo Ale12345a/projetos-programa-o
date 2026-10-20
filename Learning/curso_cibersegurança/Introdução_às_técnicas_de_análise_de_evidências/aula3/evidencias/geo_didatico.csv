@@ -1,0 +1,10 @@
+# Base de geolocalizacao DIDATICA — NAO corresponde a realidade.
+# Usa gamas reservadas a documentacao (RFC 5737, RFC 1918) as quais foram
+# atribuidas localizacoes ficticias para efeitos de exercicio.
+# Em producao usa-se GeoLite2 da MaxMind ou equivalente comercial.
+# rede,pais,cidade,latitude,longitude
+192.168.1.0/24,PT,Lisboa,38.7223,-9.1393
+10.0.0.0/8,PT,Porto,41.1579,-8.6291
+203.0.113.0/24,BR,Sao Paulo,-23.5505,-46.6333
+198.51.100.0/24,RU,Moscovo,55.7558,37.6173
+192.0.2.0/24,US,Nova Iorque,40.7128,-74.0060

@@ -1,0 +1,13 @@
+PADRAO = /^(?<mes>\w{3})\s+(?<dia>\d+)\s+(?<hora>[\d:]+)\s+(?<maquina>\S+)\s+(?<resto>.*)$/x
+File.foreach("evidencias/evidencias/sistema/auth.log") do |l|
+  m = PADRAO.match(l)
+  puts m ? "#{m[:hora]} | #{m[:maquina]} | #{m[:resto]}" :"IGNORADA: #{l}"
+end
+
+#08:12:04 | srv-web | sshd[2211]: Accepted password for marconi from 192.168.1.10 port 51422 ssh2
+#08:15:31 | srv-web | sshd[2240]: Failed password for root from 203.0.113.9 port 40211 ssh2
+#08:15:48 | srv-web | sshd[2241]: Failed password for root from 203.0.113.9 port 40213 ssh2
+#08:16:12 | srv-web | sshd[2242]: Failed password for admin from 203.0.113.9 port 40219 ssh2
+#08:16:40 | srv-web | sshd[2243]: Failed password for admin from 203.0.113.9 port 40225 ssh2
+#08:17:02 | srv-web | sshd[2244]: Accepted password for admin from 203.0.113.9 port 40231 ssh2
+#08:22:15 | srv-web | sudo: admin : TTY=pts/1 ; PWD=/home/admin ; USER=root ; COMMAND=/bin/bash

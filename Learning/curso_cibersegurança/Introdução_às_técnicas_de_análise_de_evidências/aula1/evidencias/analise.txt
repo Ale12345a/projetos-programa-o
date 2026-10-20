@@ -1,0 +1,11 @@
+acesso.log - servidor web - 3 falhas + 1 sucesso no /login
+auth.log - syslog SSH - força bruta, entrada e escalada a root
+.bash_history - ficheiro oculto - download de payload e tentativa de apagar rasto
+phishing.eml - correio - SPF e DMARC falhados mesmo IP do SSH
+proxy.log - proxy web - contactos de 60 em 60segundos 512 bytes constantes
+dns_queries.log - resolvedor DNS - 60.9% NXDOMAIN dominios gerados
+autenticaçoes.log - identidade - deslocação geográfica impossível
+
+TIMELINE UNIFICADA - tudo em UTC, por ordem do instante em que ocorreu 
+
+A conclusão não esstá em nenhum ficheiro. Está na relação entre eles

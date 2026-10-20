@@ -1,0 +1,28 @@
+Return-Path: <bounce@mail.secure-iefp-pt.com>
+Received: from mail.secure-iefp-pt.com (mail.secure-iefp-pt.com [198.51.100.77])
+	by mx.exemplo.pt (Postfix) with ESMTP id 4A2B1C
+	for <marconi.pereira@exemplo.pt>; Tue, 13 Oct 2026 09:41:02 +0100 (WEST)
+Received: from [203.0.113.9] (unknown [203.0.113.9])
+	by mail.secure-iefp-pt.com with SMTP id 77F3;
+	Tue, 13 Oct 2026 08:40:55 +0000 (UTC)
+Authentication-Results: mx.exemplo.pt;
+	spf=fail (sender IP is 198.51.100.77) smtp.mailfrom=iefp.pt;
+	dkim=none;
+	dmarc=fail (p=quarantine) header.from=iefp.pt
+From: "IEFP - Area Reservada" <no-reply@iefp.pt>
+Reply-To: suporte@secure-iefp-pt.com
+To: marconi.pereira@exemplo.pt
+Subject: Confirmacao urgente de dados da sua candidatura
+Date: Tue, 13 Oct 2026 09:40:55 +0100
+Message-ID: <7f3a2b1c9d@secure-iefp-pt.com>
+Content-Type: text/plain; charset=UTF-8
+
+Caro formando,
+
+A sua candidatura sera cancelada em 24 horas. Confirme os seus dados em:
+
+  https://secure-iefp-pt.com/area-reservada/login?id=88213
+
+Em alternativa contacte geral@secure-iefp-pt.com ou 198.51.100.77.
+
+Portal legitimo: https://www.iefp.pt/

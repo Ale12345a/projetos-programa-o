@@ -1,0 +1,5 @@
+2026-10-13 09:02:11 INFO  Utilizador 'joao' autenticado com sucesso
+2026-10-13 09:03:47 WARN  Sessão expirada para 'ana'
+2026-10-13 09:04:02 ERROR Falha ao gravar ficheiro 'relatório.pdf'
+2026-10-13 09:05:19 INFO  Pedido concluÃ­do em 42ms
+2026-10-13 09:06:33 ERROR Payload corrompido: ÿþ dados ilegiveis

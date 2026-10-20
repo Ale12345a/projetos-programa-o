@@ -1,0 +1,6 @@
+<86>1 2026-10-13T08:12:04.003Z srv-web sshd 2211 ID47 - Accepted password for marconi from 192.168.1.10
+<86>1 2026-10-13T08:15:31.117Z srv-web sshd 2240 ID47 - Failed password for root from 203.0.113.9
+<86>1 2026-10-13T08:15:48.902Z srv-web sshd 2241 ID47 - Failed password for root from 203.0.113.9
+<84>1 2026-10-13T08:16:40.441Z srv-web sshd 2243 ID47 - Failed password for admin from 203.0.113.9
+<11>1 2026-10-13T08:16:12.441Z srv-db postgres 1180 ID12 - FATAL: password authentication failed for user "app"
+<33>1 2026-10-13T08:22:15.008Z srv-web sudo - ID99 - admin : USER=root ; COMMAND=/bin/bash

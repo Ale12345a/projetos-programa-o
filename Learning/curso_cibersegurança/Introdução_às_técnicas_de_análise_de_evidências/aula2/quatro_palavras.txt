@@ -1,0 +1,6 @@
+Quatro palavras:
+
+Syslog(a matéria prima) - o formato em que quase todos os sistemas escrevem  - paara o computador é apenas uma linha longa. Para nós, possui uma estrutura que precisa de ser extraída
+Byte - o que o computador guarda mesmo — um número de 0 a 255
+Carácter - a letra que nós vemos. Nem sempre é um byte só.
+Codificação - a tabela que diz que bytes correspondem a que letras

@@ -1,0 +1,15 @@
+Tarefa 1 — Correção do procura.rb
+
+Números registados:
+
+Passo 1: 0 ocorrências de /login?next=/area antes da alteração.
+Passo 2: 3 ocorrências de /login?next=/area contadas manualmente no ficheiro acesso_alargado.log.
+Passo 4: 3 ocorrências de /login?next=/area depois da alteração.
+Passo 5: 3 ocorrências de 192.168.1.10 depois da alteração, igual ao resultado original.
+
+Linha antes: padrao = Regexp.new(termo)
+
+Linha depois: padrao = Regexp.new(Regexp.escape(termo))
+
+Explicação: O programa original interpretava o caractere ? como um símbolo especial de expressão regular, que torna o elemento anterior opcional, por isso o termo não era procurado como texto literal.
+Ao utilizar Regexp.escape(termo), os caracteres especiais passam a ser tratados como texto normal, permitindo encontrar as ocorrências corretas.
