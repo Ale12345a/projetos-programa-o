@@ -1,0 +1,50 @@
+
+Do exemplo à realidade
+❱ Retalho & E-commerce
+
+    Objetivo: prever procura/vendas por SKU/loja/semana.
+    Features: lags, médias móveis, promoções, feriados, meteo.
+    Uso: reposição de stock, planeamento de staff, compras.
+
+❱ Indústria/Operações
+
+    Objetivo: previsão de produção/consumo de insumos.
+    Features: lags, calendário, turnos, ordens de produção.
+    Uso: MRP, planeamento de capacidade, redução de downtime.
+
+❱ Retalho & E-commerce: Energia & Utilities
+
+    Objetivo: prever consumo (kWh/semana) por zona/cliente.
+    Features: temperatura, humidade, lags, calendário.
+    Uso: load forecasting, tarifários dinâmicos, manutenção.
+
+❱ Transporte & Logística
+
+    Objetivo: prever volumes (encomendas/entregas/passageiros).
+    Features: sazonalidade semanal, eventos locais, meteo, lags.
+    Uso: rotas, fleet sizing, janelas de entrega.
+
+❱ Saúde
+
+    Objetivo: prever procura por serviços (urgência, exames).
+    Features: sazonalidade, surtos, feriados, lags.
+    Uso: escalas, alocação de salas/equipamentos.
+
+❱ Turismo
+
+    Objetivo: prever ocupação/"bookings".
+    Features: calendário escolar, feriados, eventos, meteo.
+    Uso:pricing dinâmico, overbooking controlado.
+
+❱ Serviço ao Cliente / Helpdesk
+
+    Objetivo: prever tickets semanais.
+    Features: lançamentos de produto, lags, volume de utilizadores.
+    Uso: dimensionamento de equipas, SLAs.
+
+❱ Setor Público
+
+    Objetivo: prever procura por serviços (atendimentos, pedidos).
+    Features: calendário fiscal, campanhas, lags.
+    Uso: horários de atendimento, reforço temporário de equipas.
+

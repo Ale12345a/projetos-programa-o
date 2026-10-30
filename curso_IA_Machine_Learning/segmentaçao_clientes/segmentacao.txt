@@ -1,0 +1,56 @@
+❱ Retalho & E-commerce
+
+    Objetivo: segmentar clientes por comportamento de compra.
+    Exemplos: "alto valor recorrente", "sensível a preço", "compras sazonais".
+    Features típicas: gasto médio, frequência, recência, categorias preferidas, região, canal (web/loja).
+    Uso: campanhas personalizadas, bundles, upsell/cross-sell.
+
+❱ Serviços de Subscrição (telecom, streaming, ginásios)
+
+    Objetivo: agrupar por uso/engajamento.
+    Exemplos: "heavy users", "trial/baixa adesão", "premium estável".
+    Features: horas de uso, sessões/semana, upgrades/downgrades, tickets de suporte.
+    Uso: packs de retenção, offers de upgrade.
+
+❱ Banca & Fintech
+
+    Objetivo: segmentação de clientes por perfil financeiro.
+    Exemplos: "digitais intensivos", "alto património", "crédito responsável".
+    Features: saldo médio, produtos ativos, transações, canal preferido, risco.
+    Uso: next best offer, gestão de risco e KYC melhorado.
+
+❱ Saúde (hospitais/clínicas)
+
+    Objetivo: agrupar doentes por padrão de utilização.
+    Exemplos: "alta frequência urgência", "crónicos estabilizados", "preventivo".
+    Features: visitas por serviço, especialidades, adesão a planos, distância.
+    Uso: planeamento de capacidade, programas de prevenção.
+
+❱ Indústria
+
+    Objetivo: segmentar máquinas/linhas por perfil operacional.
+    Exemplos: "alta carga/alta estabilidade", "intermitente/propensa a falha".
+    Features: horas de operação, vibração, temperatura, paragens, OEE.
+    Uso: manutenção preditiva diferenciada por segmento.
+
+❱ Setor Público & Cidades
+
+    Objetivo: agrupar freguesias/municípios por necessidades.
+    Exemplos: "mobilidade crítica", "envelhecimento acentuado".
+    Features: densidade, tráfego, idade média, equipamentos públicos.
+    Uso: priorização de investimento, serviços focalizados.
+
+❱ Educação
+
+    Objetivo: segmentar alunos por padrão de aprendizagem.
+    Exemplos: "alto empenho online", "irregular com quedas perto de avaliações".
+    Features: acessos à plataforma, entregas, notas, tempo de estudo.
+    Uso: apoio pedagógico dirigido, tutoria proativa.
+
+❱ Turismo & Hospitalidade
+
+    Objetivo: segmentar hóspedes por preferências.
+    Exemplos: "bleisure", "famílias sazonais", "gastronomia".
+    Features: ADR, duração estadia, época, amenities usadas.
+    Uso: packages personalizados, upsell de serviços.
+

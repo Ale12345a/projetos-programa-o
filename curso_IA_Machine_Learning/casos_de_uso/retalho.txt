@@ -1,0 +1,13 @@
+Retalho e Marketing: Conhecer o Cliente
+Sistemas de Recomendação:
+
+    ❱ O motor da Amazon ("Clientes que compraram isto também compraram..."), Netflix e Spotify. Analisam o seu comportamento e o de milhões de outros utilizadores para lhe fazer sugestões personalizadas.
+
+Segmentação de Clientes:
+
+    ❱ Algoritmos de clustering (como o K-Means) agrupam clientes em segmentos com características semelhantes, permitindo campanhas de marketing muito mais direcionadas e eficazes.
+
+Análise de Sentimento:
+
+    ❱ Modelos de Processamento de Linguagem Natural analisam avaliações de produtos ou menções nas redes sociais para perceber se a opinião pública sobre uma marca é positiva, negativa ou neutra.
+

@@ -1,0 +1,13 @@
+Indústria: A Fábrica Inteligente
+Manutenção Preditiva:
+
+    ❱ Sensores em máquinas industriais recolhem dados (vibração, temperatura). Modelos de ML analisam estes dados para prever quando uma máquina vai avariar, permitindo que a manutenção seja feita antes da falha, evitando paragens dispendiosas.
+
+Controlo de Qualidade:
+
+    ❱ Câmaras de alta velocidade e modelos de CNN inspecionam produtos na linha de montagem para detetar defeitos minúsculos que seriam invisíveis ao olho humano.
+
+Otimização da Cadeia de Abastecimento:
+
+    ❱ A IA prevê a procura de produtos, otimiza os níveis de stock e planeia as rotas de transporte mais eficientes.
+

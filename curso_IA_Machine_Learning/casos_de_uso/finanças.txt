@@ -1,0 +1,13 @@
+Finanças: Mais Inteligência e Segurança
+Avaliação de crédito (credit scoring):
+
+    ❱ Em vez de regras simples, os bancos usam modelos de ML para analisar centenas de variáveis e prever com maior precisão a probabilidade de um cliente entrar em incumprimento de um empréstimo.
+
+Deteção de Fraude:
+
+    ❱ Modelos analisam transações em tempo real para identificar padrões anómalos que possam indicar fraude com cartão de crédito, bloqueando a transação antes que ela se complete.
+
+Trading Algorítmico:
+
+    ❱ A IA analisa notícias, sentimento das redes sociais e dados de mercado em milissegundos para tomar decisões de compra e venda de ações.
+

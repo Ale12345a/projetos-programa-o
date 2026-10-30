@@ -1,0 +1,14 @@
+
+id,idade,gasto_mensal,visitas_mensais,regiao
+C01,25,120,2,Norte
+C02,41,380,8,Sul
+C03,36,90,1,Centro
+C04,29,260,5,Sul
+C05,52,420,7,Ilhas
+C06,33,60,0,Norte
+C07,45,300,6,Centro
+C08,22,70,1,Norte
+C09,38,210,4,Sul
+C10,47,350,5,Centro
+C11,31,150,3,Ilhas
+C12,28,130,2,Sul

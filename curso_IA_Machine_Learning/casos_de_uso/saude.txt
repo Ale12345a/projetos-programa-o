@@ -1,0 +1,13 @@
+Saúde: Uma Revolução nos Cuidados Médicos
+Diagnóstico Assistido:
+
+    ❱ Modelos de CNN são treinados para analisar imagens médicas (raios-X, ressonâncias magnéticas) para detetar sinais precoces de doenças como cancro ou retinopatia diabética, muitas vezes com uma precisão igual ou superior à de especialistas humanos.
+
+Descoberta de Fármacos:
+
+    ❱ A IA analisa enormes bases de dados moleculares para prever quais compostos têm maior probabilidade de serem eficazes contra uma doença, acelerando drasticamente a investigação.
+
+Medicina Personalizada:
+
+    ❱ Modelos preveem qual o tratamento mais eficaz para um paciente com base no seu perfil genético, estilo de vida e histórico médico.
+

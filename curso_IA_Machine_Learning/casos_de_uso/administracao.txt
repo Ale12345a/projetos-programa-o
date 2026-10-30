@@ -1,0 +1,13 @@
+Administração Pública e Logística
+Otimização de Processos:
+
+    ❱ Previsão da afluência de pessoas a serviços públicos para otimizar a alocação de pessoal; otimização de rotas de recolha de lixo.
+
+Análise Preditiva para Segurança:
+
+    ❱ Análise de dados históricos para identificar áreas e horários com maior probabilidade de ocorrência de crimes, ajudando a planear o policiamento.
+
+Gestão de Tráfego:
+
+    ❱ Sistemas que analisam o fluxo de tráfego em tempo real e ajustam os semáforos para minimizar o congestionamento.
+

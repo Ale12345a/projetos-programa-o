@@ -1,0 +1,13 @@
+id,idade,gasto_mensal,visitas_mensais,regiao,cluster
+C01,25,120,2,Norte,1
+C02,41,380,8,Sul,0
+C03,36,90,1,Centro,1
+C04,29,260,5,Sul,1
+C05,52,420,7,Ilhas,0
+C06,33,60,0,Norte,1
+C07,45,300,6,Centro,0
+C08,22,70,1,Norte,1
+C09,38,210,4,Sul,1
+C10,47,350,5,Centro,0
+C11,31,150,3,Ilhas,1
+C12,28,130,2,Sul,1
