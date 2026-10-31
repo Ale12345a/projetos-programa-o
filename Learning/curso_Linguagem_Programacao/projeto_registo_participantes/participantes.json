@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "alexandre",
+        "email": "teste@gmail.com",
+        "codigo_postal": "2725-441",
+        "localidade": "Mem Martins"
+    },
+    {
+        "nome": "Marta",
+        "email": "martamoreira@gmail.com",
+        "codigo_postal": "4580-442",
+        "localidade": "Lordelo"
+    },
+    {
+        "nome": "Alexandre Dias da Silva",
+        "email": "alex@gmail.com",
+        "codigo_postal": "4780-442",
+        "localidade": "Santo Tirso"
+    },
+    {
+        "nome": "pedro",
+        "email": "deqkf@email.com",
+        "codigo_postal": "4000-441",
+        "localidade": "Porto"
+    }
+]

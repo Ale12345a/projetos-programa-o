@@ -1,0 +1,33 @@
+body {
+  background: #f3f6fb;
+  color: #202938;
+}
+
+header {
+  background: #173b6c;
+  color: white;
+}
+
+.card {
+  border: 0;
+  border-radius: 14px;
+}
+
+.form-control {
+  padding: 0.7rem 0.8rem;
+}
+
+.btn-primary {
+  background: #1769aa;
+  border-color: #1769aa;
+}
+
+@media (max-width: 576px) {
+  header .h2 {
+    font-size: 1.45rem;
+  }
+
+  .card-body {
+    padding: 1.2rem !important;
+  }
+}
