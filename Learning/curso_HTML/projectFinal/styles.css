@@ -1,0 +1,302 @@
+
+/* ========================================
+   GLOBAL ADVENTURES BLOG
+   Main Stylesheet
+======================================== */
+
+/* General settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background: linear-gradient(135deg, #1d566e, #319b91);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+header p {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #183c4a;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f5c46b;
+}
+
+/* Main content */
+
+main {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #1d566e;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/* Photo gallery */
+
+#photo-gallery ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+#photo-gallery figure {
+    background-color: #f4f7f6;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+
+#photo-gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+#photo-gallery figure:hover img {
+    transform: scale(1.04);
+}
+
+figcaption {
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    color: #555;
+}
+
+/* City detail sections */
+
+#landmarks img,
+#culinary-delights img {
+    width: 100%;
+    max-width: 650px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+#cultural-experiences iframe {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 10px;
+}
+
+/* About section */
+
+#about {
+    text-align: center;
+}
+
+/* Forms */
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #319b91;
+    box-shadow: 0 0 5px rgba(49, 155, 145, 0.3);
+}
+
+/* Buttons */
+
+button {
+    background-color: #1d766f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #14544f;
+}
+
+/* Footer */
+
+footer {
+    background-color: #183c4a;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 40px;
+}
+
+footer nav {
+    background: none;
+}
+
+footer nav ul {
+    gap: 20px;
+}
+
+footer a {
+    color: #f5c46b;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.copyright {
+    margin-top: 15px;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    #landmarks img,
+    #culinary-delights img {
+        height: 250px;
+    }
+
+    #cultural-experiences iframe {
+        height: 250px;
+    }
+
+}
