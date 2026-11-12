@@ -1,6 +1,22 @@
+# Python
 *.class
 venv/
 env/
 __pycache__/
 *.pyc
 *.deb
+
+# .NET / ASP.NET Core
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.cache
+TestResults/
+
+# Visual Studio Code
+.vscode/
+
+# User-specific files
+*.log
